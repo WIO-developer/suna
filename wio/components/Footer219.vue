@@ -18,14 +18,14 @@
       | E-MAIL wio_baebae@naver.com |
     </p>
     <p style="margin-top: 0.3em; color:white" class="scdream_greyLight5_08">
-      | Tel 010-50967-8707 |
+      | Tel 010-5967-8707 |
     </p>
     <p style="margin-top: 1.5em; color:white" class="scdream_greyLight5_08">
       Copyright &copy; 2023.11 All Rights Reserved by
     </p>
     <div style="margin-top: 0.3em;">
       <img style="height:1em; line-height: 1em;" :src="storage_url + `/collection/219/logo.png`">
-      <a href="https://wiodaily.com/home/">
+      <a href="https://suna.company">
         <img style="height:1em; line-height: 1em;" :src="storage_url + `/collection/219/wiocollection.png`">
       </a>
     </div>

@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="hero__col hero__col-right"
-                    style="background-image:url('/image/home_store.jpg'); background-size: cover; background-position: center;">
+                    style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
                     <figure class="hero-col">
                         <a href="https://smartstore.naver.com/b219">
                             <figcaption class="hero-col-copy">
@@ -582,7 +582,7 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
 .hero__cols {
     display: block;
     margin: 0 auto;
-    width: 91.5%;
+    width: 100%;
 }
 
 .hero__col {
@@ -592,7 +592,7 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
     position: relative;
     width: 100%;
     display: block;
-    height: 200px;
+    height: 150px;
 }
 
 
