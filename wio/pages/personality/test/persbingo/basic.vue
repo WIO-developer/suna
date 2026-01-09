@@ -184,7 +184,7 @@
 <script>
 import metaConfig from "~/config/metaConfig";
 import PersHeader from "@/components/PersHeader.vue";
-import PersQuestionList from "~/config/PersQuestionList";
+import PersQuestionList from "~/config/persQuestionList";
 
 export default {
   name: "persbingo",

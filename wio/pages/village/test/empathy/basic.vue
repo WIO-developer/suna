@@ -98,7 +98,7 @@
 <script>
 import metaConfig from "~/config/metaConfig";
 import PersHeader from "@/components/PersHeader.vue";
-import PersQuestionList from "~/config/PersQuestionList";
+import PersQuestionList from "~/config/persQuestionList";
 import persindex from "~/assets/js/persindex";
 
 export default {
