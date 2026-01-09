@@ -12,13 +12,16 @@
       <span style="font-weight: bold;">COMPANY INFO</span> 
     </p>
       <p style="margin-top: 0.5em; color:white" class="scdream_greyLight5_08">
-        | COMPANY twoonenine | LICENSE 253-24-01856 |</p>
+        | COMPANY WIO | LICENSE 614-02-67518 |</p>
     
     <p style="margin-top: 0.3em; color:white" class="scdream_greyLight5_08">
-      | CEO 김지우 | E-MAIL twoonenine219@naver.com |
+      | E-MAIL wio_baebae@naver.com |
+    </p>
+    <p style="margin-top: 0.3em; color:white" class="scdream_greyLight5_08">
+      | Tel 010-50967-8707 |
     </p>
     <p style="margin-top: 1.5em; color:white" class="scdream_greyLight5_08">
-      Copyright &copy; 2023.08 All Rights Reserved by
+      Copyright &copy; 2023.11 All Rights Reserved by
     </p>
     <div style="margin-top: 0.3em;">
       <img style="height:1em; line-height: 1em;" :src="storage_url + `/collection/219/logo.png`">

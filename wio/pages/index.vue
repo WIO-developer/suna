@@ -1,282 +1,214 @@
 <template>
-    <div class="service_width">
+    <div style="margin: 0 auto; width:100vw; max-width: 1800px;">
 
-        <HomeHeader />
 
-        <div class="normal_shell" style="margin-top: 5em; width:90%">
-            <img style="width:35%;" :src="storage_url + `/wio/wio_black_logotext.png`" />
+        <div class="container_column">
+            <Header219 />
+            <!--
+        <div class="pc_row">
+          <img class="pc_66" :src="storage_url + `/collection/219/1_1.jpg`">
+          <div class="container_column">
+            <img style="width:100%;" :src="storage_url + `/collection/219/1_2.jpg`">
+            <img style="width:100%;" :src="storage_url + `/collection/219/1_3.jpg`">
+            <img style="width:100%;" :src="storage_url + `/collection/219/1_4.jpg`">
+          </div>
         </div>
-        <div style="position: relative; height: 8em; margin-bottom: 0.1em;">
-            <div class="normal_shell"
-                style="position: absolute; top: 0; left: 0; right: 0; z-index: 9; border-radius: 10px; background: white; border: solid rgb(109, 109, 109) 2px; margin: 0 auto 0.8em auto; padding: 1em">
-                <p class="scdream_greyDark_12">SUNA</p>
-                <!--인기 접힌상태-->
-                <div v-show="showLinks">
-                    <MainHomeLink v-for="(menu, index) in menuranklist" :key="menu.key"
-                        :rank_img="`/icon/rank_` + (index + 1) + `.png`" :name="menu.menuListOption.name"
-                        :service="menu.menuListOption.service" :url="menu.url"
-                        :service_logo="menu.menuListOption.service_logo" v-show="index === currentKeywordIndex" />
-                    <div style="display:flex; justify-content: center;" @click="toggleLinks">
-                        <img style="width:1.2em;" :src="storage_url + `/icon/down_arrow.png`" />
-                    </div>
-                </div>
-                <!--인기 펼쳐진 상태-->
+        -->
 
-                <div v-show="!showLinks">
-                    <MainHomeLink v-for="(menu, index) in menuranklist" :key="menu.key"
-                        :rank_img="`/icon/rank_` + (index + 1) + `.png`" :name="menu.menuListOption.name"
-                        :service="menu.menuListOption.service" :url="menu.url"
-                        :service_logo="menu.menuListOption.service_logo" />
-
-                    <div style="display:flex; justify-content: center;" @click="toggleLinks">
-                        <img style="width:1.2em;" :src="storage_url + `/icon/up_arrow.png`" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="normal_shell" style="width:90%; margin-bottom: 2em;">
-            <nuxt-link style="width:100%; display:flex; justify-content: right;" to="/collection/219/">
-                <img style="width:75%;" :src="storage_url + `/mainhomead/mainhomead.png`" />
-            </nuxt-link>
-        </div>
-
-        <div class="white_shell flex_row_between_shell" style="margin-bottom: 4em;">
-            <a
-  style="width:18%;"
-  href="https://smartstore.naver.com/b219"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img style="width:100%;" :src="storage_url + `/collection/초록배경.png`" />
-  <p class="scdream_greyDark_07" style="text-align: center;">네이버</p>
-</a>
-
-<!--
-            <nuxt-link style="width:18%;" :to="`/village/`">
-                <img style="width:100%;" :src="storage_url + `/village/village_icon.png`" />
-                <p class="scdream_greyDark_07" style="text-align: center;">빌리지</p>
-            </nuxt-link>
-
-            <nuxt-link style="width:18%;" :to="`/personality/`">
-                <img style="width:100%;" :src="storage_url + `/pers/pers_icon.png`" />
-                <p class="scdream_greyDark_07" style="text-align: center;">퍼스널리티</p>
-            </nuxt-link>
-
-            <nuxt-link style="width:18%;" :to="`/retro/`">
-                <img style="width:100%;" :src="storage_url + `/retro/retro_icon.png`" />
-                <p class="scdream_greyDark_07" style="text-align: center;">레트로</p>
-            </nuxt-link>-->
-        </div>
-
-        <!--광고-->
-        <AppVif>
-            <div class="normal_shell">
-                <AdsenseInpeed slot-str="6469048657" />
-            </div>
-        </AppVif>
-
-        <AppVifReverse>
-            <div style="height: 7em;"></div>
-        </AppVifReverse>
-
-
-        <!--신규--><!--
-        <div class="white_shell">
-            <p class="scdream_greyDark_12">신규</p>
-            <div style="margin: 1em auto;">
-                <MainHomeLink v-for="menu in menunewlist" :key="menu.key" rank_img="/icon/new_red.png"
-                    :name="menu.menuListOption.name" :service="menu.menuListOption.service" :url="menu.url"
-                    :service_logo="menu.menuListOption.service_logo" />
-            </div>
-        </div>
-    -->
-        <!--콜렉션--><!--
-        <div style="margin-top:1em; background-image: URL(https://wiodaily.com/images/collection/219/219_home_2.jpg); background-size : cover; background-position: center;"
-            class="wide_shell">
-            <div class="normal_shell">
-                <div class="flex_row_between_shell" style="align-items: center;">
-                    <p style="color:white" class="scdream_greyDark_12">콜렉션</p>
-                    <nuxt-link to="/collection/219/" style="width:1.8em; height: 1.8em;">
-                        <img style="width:100%;" :src="storage_url + `/collection/collection_icon.png`" />
-                    </nuxt-link>
-                </div>
-
-                <div style="height:18em;"></div>
-
-                <nuxt-link to="/collection/219/" class="flex_row_between_shell"
-                    style="align-items: center; margin:1.5em auto 1em auto">
-                    <p style="color:white" class="scdream_greyDark_11">TWOONENINE | 219</p>
-                    <img style="height:1.2em;" :src="storage_url + `/icon/white_right_arrow.png`" />
-                </nuxt-link>
-            </div>
-        </div>
-    -->
-        <!--빌리지--><!--
-        <div style="margin-top:1em;height: auto; background-image: URL(https://wiodaily.com/images/village/wio_home.png); background-size : cover; background-position: center;"
-            class="wide_shell">
-            <div class="normal_shell">
-                <div class="flex_row_between_shell" style="align-items: center;">
-                    <p class="scdream_greyDark_12">빌리지</p>
-                    <nuxt-link to="/village/" style="width:1.8em; height: 1.8em;">
-                        <img style="width:100%;" :src="storage_url + `/village/village_icon.png`" />
-                    </nuxt-link>
-                </div>
-
-                <div style="height:18em;"></div>
-
-                <nuxt-link to="/village/" class="flex_row_between_shell"
-                    style="align-items: center; margin:1.5em auto 1em auto">
-                    <p class="scdream_greyDark_11">배배&마리</p>
-                    <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
-                </nuxt-link>
-            </div>
-        </div>
-    -->
-
-        <!--퍼스널리티--><!--
-        <div style="margin-top:1em" class="wide_shell">
-            <div class="normal_shell">
-                <div class="flex_row_between_shell" style="align-items: center;">
-                    <p class="scdream_greyDark_12">퍼스널리티</p>
-                    <nuxt-link to="/personality/" style="width:1.8em; height: 1.8em;">
-                        <img style="width:100%;" :src="storage_url + `/pers/pers_icon.png`" />
-                    </nuxt-link>
-                </div>
-                <div style="margin:1em auto">
-                    <div class="flex_row_between_shell">
-                        <MainHomeImg v-for="menu in menuperslist" :key="menu.key" :name="menu.menuListOption.name"
-                            :url="menu.url" :service_img="menu.menuListOption.service_img" />
-                    </div>
-                </div>
-                <nuxt-link to="/personality/" class="flex_row_between_shell"
-                    style="align-items: center; margin:1.5em auto 1em auto">
-                    <p class="scdream_greyDark_11">성격유형 전체보기</p>
-                    <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
-                </nuxt-link>
-            </div>
-        </div>
-    -->
-        <!--레트로--><!--
-        <div style="margin-top:1em" class="wide_shell">
-            <div class="normal_shell">
-                <div class="flex_row_between_shell" style="align-items: center;">
-                    <p class="scdream_greyDark_12">레트로</p>
-                    <nuxt-link to="/retro/" style="width:1.8em; height: 1.8em;">
-                        <img style="width:1.8em;" :src="storage_url + `/retro/retro_icon.png`" />
-                    </nuxt-link>
-                </div>
-                <div style="margin:1em auto">
-                    <div class="flex_row_between_shell">
-                        <MainHomeImg v-for="menu in menuretrolist" :key="menu.key" :name="menu.menuListOption.name"
-                            :url="menu.url" :service_img="menu.menuListOption.service_img" />
-                        <div style="width:30%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    -->
-        <!--전체서비스--><!--
-        <div style="margin-top:1em" class="white_shell">
-            <p class="scdream_greyDark_12">전체서비스</p>
-            <div style="margin: 1em auto;">
-                <nuxt-link to="/collection/219/" class="normal_shell">
-                    <div class="flex_row_between_shell" style="align-items: center; margin:1em auto">
-                        <div class="flex_row_baseline_shell">
-                            <img style="width:3em; border-radius: 10px;" :src="storage_url + `/collection/collection_icon.png`" />
-                            <div class="flex_column_endly_shell" style="margin-left: 0.8em;">
-                                <p class="scdream_greyDark_09">위오콜렉션</p>
-                                <p class="scdream_greyDark_11">위오의 패션 브랜드</p>
-                            </div>
+            <section class="hero__container">
+                <div class="hero__main">
+                    <div class="hero">
+                        <div class="hero__info">
+                            <h2 class="hero__title" style="font-size:1.5em">SUNA</h2>
+                            <p class="hero__sub" style="font-size:1em">WIO.COLLECTION</p>
                         </div>
-                        <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
+
+                        <figure class="hero__media">
+                            <video muted loop autoplay playsinline class="hero__video" preload="auto">
+                                <source src="/image/home_main.mp4" type="video/mp4">
+                            </video>
+                        </figure>
                     </div>
-                </nuxt-link>
-                <nuxt-link to="/village/" class="normal_shell">
-                    <div class="flex_row_between_shell" style="align-items: center; margin:1em auto">
-                        <div class="flex_row_baseline_shell">
-                            <img style="width:3em; border-radius: 10px;" :src="storage_url + `/village/village_icon.png`" />
-                            <div class="flex_column_endly_shell" style="margin-left: 0.8em;">
-                                <p class="scdream_greyDark_09">위오빌리지</p>
-                                <p class="scdream_greyDark_11">위오의 자식들</p>
-                            </div>
-                        </div>
-                        <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
+                </div>
+
+                <div class="hero__cols">
+                    <div class="hero__col"
+                        style="background-image:url('https://wiodaily.com/images/collection/home_instagram.jpg'); background-size: cover; background-position: center;">
+                        <figure class="hero-col">
+                            <a href="https://www.instagram.com/suna.company/">
+                                <figcaption class="hero-col-copy">
+                                    <small>SUNA story</small>
+                                    <h3>INSTAGRAM</h3>
+                                    <p>Continue Watching</p>
+                                </figcaption>
+                            </a>
+                        </figure>
                     </div>
-                </nuxt-link>
-                <nuxt-link to="/personality/" class="normal_shell">
-                    <div class="flex_row_between_shell" style="align-items: center; margin:1em auto">
-                        <div class="flex_row_baseline_shell">
-                            <img style="width:3em; border-radius: 10px;" :src="storage_url + `/pers/pers_icon.png`" />
-                            <div class="flex_column_endly_shell" style="margin-left: 0.8em;">
-                                <p class="scdream_greyDark_09">위오퍼스널리티</p>
-                                <p class="scdream_greyDark_11">성격유형 서비스</p>
-                            </div>
-                        </div>
-                        <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
+
+                    <div class="hero__col hero__col-right"
+                        style=" background-image:url('https://wiodaily.com/images/collection/home_store.jpg'); background-size: cover; background-position: center;">
+                        <figure class="hero-col">
+                            <a href="https://smartstore.naver.com/b219">
+                                <figcaption class="hero-col-copy">
+                                    <small>SUNA shopping mall</small>
+                                    <h3>STORE</h3>
+                                    <p>Continue Watching</p>
+                                </figcaption>
+                            </a>
+                        </figure>
                     </div>
-                </nuxt-link>
-                <nuxt-link to="/retro/" class="normal_shell">
-                    <div class="flex_row_between_shell" style="align-items: center; margin:1em auto">
-                        <div class="flex_row_baseline_shell">
-                            <img style="width:3em; border-radius: 10px;" :src="storage_url + `/retro/retro_icon.png`" />
-                            <div class="flex_column_endly_shell" style="margin-left: 0.8em;">
-                                <p class="scdream_greyDark_09">위오레트로</p>
-                                <p class="scdream_greyDark_11">복고감성 서비스</p>
-                            </div>
-                        </div>
-                        <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
-                    </div>
-                </nuxt-link>
-                
+                </div>
+            </section>
+            <!--
+        <div class="container_column">
+          <h1 style="margin: 1em 0 0 5vw; font-size:1.4em; color:black">BEST</h1>
+  
+          <ul class="slides mobile_ver" style="margin:1em 0">
+            <div v-for="(collectionBestItemSet, index) in collectionBestItem">
+              <input v-if="index == 0" type="radio" name="best-btn" :id="`best-${index}`" checked />
+              <input v-else type="radio" name="best-btn" :id="`best-${index}`" />
+              <li class="slide-container">
+                <a :href="`https://smartstore.naver.com/twoonenine/products/` + collectionBestItemSet.naverItem"
+                  class="slide slidein">
+                  <img class="item_img"
+                    :src="storage_url + `/collection/219/entire/` + (collectionBestItemSet.Item) + `.png`" />
+                  <p style="font-size:1em; color:black; word-break: keep-all">{{ collectionBestItemSet.Name }}</p>
+                  <p style="font-size:1em; color:black">{{ collectionBestItemSet.Price }}</p>
+                </a>
+                <div class="nav">
+                  <label v-if="index - 1 < 0" for="best-4" class="prev">&#x2039;</label>
+                  <label v-else :for="`best-${index - 1}`" class="prev">&#x2039;</label>
+                  <label v-if="index + 1 > 4" for="best-0" class="next">&#x203a;</label>
+                  <label v-else :for="`best-${index + 1}`" class="next">&#x203a;</label>
+                </div>
+              </li>
+              <li class="nav-dots">
+                <label for="best-0" class="nav-dot" id="best-dot-0"></label>
+                <label for="best-1" class="nav-dot" id="best-dot-1"></label>
+                <label for="best-2" class="nav-dot" id="best-dot-2"></label>
+                <label for="best-3" class="nav-dot" id="best-dot-3"></label>
+                <label for="best-4" class="nav-dot" id="best-dot-4"></label>
+              </li>
             </div>
-        </div>
-    -->
-        <!--블로그-->
-        <!--
-        <div class="white_shell" style="margin-top:1em">
-            <a href="https://blog.wiodaily.com" class="flex_row_between_shell" style="align-items: center; margin:1em auto">
-
-                <p class="scdream_greyDark_12">WIO 블로그</p>
-                <img style="height:1.2em;" :src="storage_url + `/icon/right_arrow.png`" />
-
+          </ul>
+  
+          <div class="container_row pc_ver" style="margin: 1em 0; width:100%; height: 20vw; position: relative;">
+            <a v-for="(collectionBestItemSet, index) in collectionBestItem" class="item_a slidein"
+              :style="`left:` + (index * 20) + `%;`"
+              :href="`https://smartstore.naver.com/twoonenine/products/` + collectionBestItemSet.naverItem">
+              <img class="item_img" :src="storage_url + `/collection/219/entire/` + (collectionBestItemSet.Item) + `.png`">
+              <p style="font-size:1em; color:black; word-break: keep-all">{{ collectionBestItemSet.Name }}</p>
+              <p style="font-size:1em; color:black">{{ collectionBestItemSet.Price }}</p>
             </a>
+          </div>
         </div>
-    
-        <Footer />
-        -->
-        <!--
-        <AppCacheDelete />
-        <AppVif>
-            <AppAd />
-        </AppVif>
-        -->
-    </div>
+  
+        <div class="pc_row">
+          <div class="container_column pc_38">
+            <img :src="storage_url + `/collection/219/2_1.jpg`">
+            <img :src="storage_url + `/collection/219/2_2.jpg`">
+          </div>
+          <div class="container_row pc_62">
+            <img style="width:36%;" :src="storage_url + `/collection/219/2_3.jpg`">
+            <img style="width:64%;" :src="storage_url + `/collection/219/2_4.jpg`">
+          </div>
+        </div>
+  
+        <div class="container_column">
+          <h1 style="margin: 1em 0 0 5vw; font-size:1.4em; color:black">NEW</h1>
+  
+          <ul class="slides mobile_ver" style="margin:1em 0">
+            <div v-for="(collectionNewItemSet, index) in collectionNewItem">
+              <input v-if="index == 0" type="radio" name="new-btn" :id="`new-${index}`" checked />
+              <input v-else type="radio" name="new-btn" :id="`new-${index}`" />
+              <li class="slide-container">
+                <a :href="`https://smartstore.naver.com/twoonenine/products/` + collectionNewItemSet.naverItem"
+                  class="slide slidein">
+                  <img class="item_img"
+                    :src="storage_url + `/collection/219/entire/` + (collectionNewItemSet.Item) + `.png`" />
+                  <p style="font-size:1em; color:black; word-break: keep-all">{{ collectionNewItemSet.Name }}</p>
+                  <p style="font-size:1em; color:black">{{ collectionNewItemSet.Price }}</p>
+                </a>
+                <div class="nav">
+                  <label v-if="index - 1 < 0" for="new-4" class="prev">&#x2039;</label>
+                  <label v-else :for="`new-${index - 1}`" class="prev">&#x2039;</label>
+                  <label v-if="index + 1 > 4" for="new-0" class="next">&#x203a;</label>
+                  <label v-else :for="`new-${index + 1}`" class="next">&#x203a;</label>
+                </div>
+              </li>
+              <li class="nav-dots">
+                <label for="new-0" class="nav-dot" id="new-dot-0"></label>
+                <label for="new-1" class="nav-dot" id="new-dot-1"></label>
+                <label for="new-2" class="nav-dot" id="new-dot-2"></label>
+                <label for="new-3" class="nav-dot" id="new-dot-3"></label>
+                <label for="new-4" class="nav-dot" id="new-dot-4"></label>
+              </li>
+            </div>
+          </ul>
+  
+          <div class="container_row pc_ver" style="margin: 1em 0; width:100%; height: 20vw; position: relative;">
+            <a v-for="(collectionNewItemSet, index) in collectionNewItem" class="item_a slidein"
+              :style="`left:` + (index * 20) + `%;`"
+              :href="`https://smartstore.naver.com/twoonenine/products/` + collectionNewItemSet.naverItem">
+              <img class="item_img" :src="storage_url + `/collection/219/entire/` + (collectionNewItemSet.Item) + `.png`">
+              <p style="font-size:1em; color:black; word-break: keep-all">{{ collectionNewItemSet.Name }}</p>
+              <p style="font-size:1em; color:black">{{ collectionNewItemSet.Price }}</p>
+            </a>
+          </div>
+        </div>
+  
+        <img style="width:100%;" :src="storage_url + `/collection/219/4.jpg`">
+  
+        <div class="container_column">
+          <h1 style="margin: 1em 0 0 5vw; font-size:1.4em; color:black">ENTIRE</h1>
+  
+          <div class="entire_item">
+            <a class="entire_item_a" v-for="(collectionItemSet, index) in collectionItem"
+              :href="`https://smartstore.naver.com/twoonenine/products/` + collectionItemSet.naverItem">
+              <img class="entire_item_img" :src="storage_url + `/collection/219/entire/` + (index + 1) + `.png`">
+              <p style="font-size:0.8em; color:black; word-break: keep-all">{{ collectionItemSet.Name }}</p>
+              <p style="font-size:0.8em; color:black">{{ collectionItemSet.Price }}</p>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    -->
+            <!--
+      <AppAd />
+    -->
+            <Footer219 style="max-width: none; background:black" />
+        </div>
 </template>
 <script>
+import menuConfig from '@/config/webConfig'
+import AdsenseContent from '@/components/AdsenseContent.vue'
+import AdsenseInpeed from '@/components/AdsenseInpeed.vue'
+import Footer from '@/components/Footer.vue'
+import Footer219 from '@/components/Footer219.vue'
+import AdFit from "@/components/AdFit"
 import metaConfig from '~/config/metaConfig'
-import menuConfig from '~/config/webConfig'
-import AdsenseInpeed from "@/components/AdsenseInpeed";
-import Footer from "@/components/Footer";
-import MainHomeLink from "@/components/MainHomeLink"
-import MainHomeImg from "@/components/MainHomeImg"
-
+import modalView from "~/components/ModalView"
+import ShareLink from "~/components/ShareLink"
+import AppAd from "@/components/AppAd.vue"
+import CollectionItem from "~/config/CollectionItem"
 
 export default {
-    name: "wio",
+    name: "twoonenine",
     head() {
-        return metaConfig
-            .filter((menu) => {
-                return menu.fileNm === "wio";
-            })
-            .pop();
+        return metaConfig.filter(menu => {
+            return menu.fileNm === 'twoonenine'
+        }).pop()
     },
     components: {
-        AdsenseInpeed: AdsenseInpeed,
         Footer: Footer,
-        MainHomeLink: MainHomeLink,
-        MainHomeImg: MainHomeImg,
-        menuConfig: menuConfig,
+        AdsenseContent: AdsenseContent,
+        AdsenseInpeed: AdsenseInpeed,
+        AdFit: AdFit,
+        ModalView: modalView,
+        AppAd: AppAd,
+        ShareLink: ShareLink,
+        CollectionItem: CollectionItem,
     },
     computed: {
         storage_url: {
@@ -287,47 +219,479 @@ export default {
     },
     data() {
         return {
-            showLinks: true,
+            isModalViewed: false,
             menulist: [],
             menuranklist: [],
-            currentKeywordIndex: 0,
-
+            image_url: `${process.env.VUE_APP_STORAGE_URL}/images/kakaoimg/kakaoimg_wioretro.jpg`,
+            url: `${process.env.VUE_APP_SERVER_URL}`,
+            view_num: true,
+            collectionItem: [],
+            collectionBestItem: [],
+            collectionNewItem: [],
         }
-    },
-    methods: {
-        toggleLinks() {
-            this.showLinks = !this.showLinks;
-        }
-    },
-    created() {
-        this.menulist = menuConfig.filter((menu) => {
-            return menu.IsMain === true
-        })
-        // this.menuranklist = menurankConfig.filter((menu) => {
-        //   return menu.IsMain === true
-        // })
-        this.menuperslist = [...this.menulist]
-            .filter(menu => { return menu.menuListOption.service === "퍼스널리티" })
-
-        this.menuretrolist = [...this.menulist]
-            .filter(menu => { return menu.menuListOption.service === "레트로" })
-
-        this.menunewlist = [...this.menulist]
-            .filter(menu => { return menu.new === true })
-
-        this.menuranklist = [...this.menulist]
-            .filter(menu => { return menu.priority < 6 })
-            .sort((a, b) => { return a.priority - b.priority })
-
-        setInterval(() => {
-            this.currentKeywordIndex++;
-            if (this.currentKeywordIndex >= 5) {
-                this.currentKeywordIndex = 0;
-            }
-        }, 2000);
     },
     mounted() {
+        this.collectionItem = CollectionItem;
 
-    }
+        for (var i = 0; i < CollectionItem.length; i++) {
+            if (CollectionItem[i].bestItem > 0) {
+                this.collectionBestItem[CollectionItem[i].bestItem - 1] = CollectionItem[i];
+            }
+            if (CollectionItem[i].newItem > 0) {
+                this.collectionNewItem[CollectionItem[i].newItem - 1] = CollectionItem[i];
+            }
+        }
+
+    },
 }
 </script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 100vw;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    transform: translate(-100%, 0);
+    text-align: center;
+    transition: all .7s ease-in-out;
+}
+
+.nav label {
+    width: 20%;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0.3;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 100vw;
+    font-family: "Varela Round", sans-serif;
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover+.nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked+.slide-container .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 0px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(117, 117, 117, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 255.8);
+}
+
+
+input#best-1:checked~.nav-dots label#best-dot-1,
+input#best-2:checked~.nav-dots label#best-dot-2,
+input#best-3:checked~.nav-dots label#best-dot-3,
+input#best-4:checked~.nav-dots label#best-dot-4,
+input#best-0:checked~.nav-dots label#best-dot-0,
+input#new-1:checked~.nav-dots label#new-dot-1,
+input#new-2:checked~.nav-dots label#new-dot-2,
+input#new-3:checked~.nav-dots label#new-dot-3,
+input#new-4:checked~.nav-dots label#new-dot-4,
+input#new-0:checked~.nav-dots label#new-dot-0 {
+    background: rgba(255, 255, 255, 0.767);
+    z-index: 2;
+}
+
+.pc_66 {
+    width: 66%;
+}
+
+.pc_38 {
+    width: 38%;
+}
+
+.pc_62 {
+    width: 62%;
+}
+
+.pc_100 {
+    width: 100%;
+}
+
+.container_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.entire_item {
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.entire_item_a {
+    width: 20%;
+    height: 20vw;
+    text-align: center;
+    transition: 0.3s ease;
+    margin: 1em 0;
+}
+
+
+.entire_item_img {
+    width: auto;
+    max-width: 95%;
+    height: 80%;
+    margin: auto;
+    align-content: center;
+
+}
+
+.pc_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item_a {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.item_img {
+    width: auto;
+    max-width: 95%;
+    height: 80%;
+    margin: auto;
+    align-content: center;
+}
+
+
+
+.item_a:hover {
+    transform: scale(0.9);
+    z-index: 2;
+}
+
+.entire_item_a:hover {
+    transform: scale(0.9);
+    z-index: 2;
+}
+
+.mobile_ver {
+    display: none;
+}
+
+.pc_ver {
+    display: flex;
+}
+
+@keyframes slidein {
+    0% {
+        top: 0em;
+    }
+
+    50% {
+        top: 0.5em;
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+.slidein {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideout {
+    0% {
+        top: 0em;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+.slideout {
+    animation-duration: 3s;
+    animation-name: slideout;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile_ver {
+        display: flex;
+    }
+
+    .entire_item_a {
+        width: 50%;
+        text-align: center;
+        height: 55vw;
+    }
+
+    .pc_ver {
+        display: none;
+    }
+
+    .pc_66 {
+        width: 100%;
+    }
+
+    .pc_38 {
+        width: 100%;
+    }
+
+    .pc_62 {
+        width: 100%;
+    }
+
+    .pc_100 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .pc_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+/*미디어*/
+.carousel__wrap {
+    margin: 48px 0;
+    text-align: center;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: block;
+}
+
+.hero__cols {
+    display: block;
+    margin: 0 auto;
+    width: 91.5%;
+}
+
+.hero__col {
+    background-color: #a7a7a7;
+    margin-top: 16px;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 200px;
+}
+
+
+
+
+.hero-col-copy {
+    bottom: 16px;
+    color: #FFFFFF;
+    display: block;
+    padding: 0 4%;
+    position: absolute;
+    z-index: 2;
+}
+
+.hero-col-copy a {
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.hero-col-copy h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-col-copy small {
+    display: block;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+
+.hero__info {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh;
+    padding: 0 4%;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.hero__info h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 8px;
+}
+
+.hero__info p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.hero__media {
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-top: 80vh;
+}
+
+.hero__video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 900px) {
+
+
+    .hero__cols {
+        display: flex;
+        width: 100%
+    }
+
+    .hero__col {
+        margin: 0;
+        height: 400px;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .carousel__wrap {
+        margin: 96px 0;
+    }
+
+    .hero__media {
+        width: 56%
+    }
+
+    .hero__info {
+        display: flex;
+        text-align: left;
+        width: 44%;
+    }
+}
+</style>

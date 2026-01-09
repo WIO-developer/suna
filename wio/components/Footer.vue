@@ -40,7 +40,7 @@ export default {
   },
   created() {
     this.contact = 'wio_baebae@naver.com'
-    this.url = 'https://wiodaily.com'
+    this.url = 'https://smartstore.naver.com/b219'
     this.urlNm = 'WIO 기술 블로그'
     if (this.type === 'wiopers') {
       this.aboutTxt = `WIO퍼스널리티(위오퍼스널리티)는 사용자 여러분께 시각적이고 역동적인 성격유형 컨텐츠로

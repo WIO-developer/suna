@@ -19,7 +19,7 @@
         <div class="hero__main">
           <div class="hero">
             <div class="hero__info">
-              <h2 class="hero__title" style="font-size:1.5em">TWOONENINE</h2>
+              <h2 class="hero__title" style="font-size:1.5em">SUNA</h2>
               <p class="hero__sub" style="font-size:1em">WIO.COLLECTION</p>
             </div>
 
@@ -35,9 +35,9 @@
           <div class="hero__col"
             style="background-image:url('https://wiodaily.com/images/collection/home_instagram.jpg'); background-size: cover; background-position: center;">
             <figure class="hero-col">
-              <a href="https://instagram.com/219_twoonenine">
+              <a href="https://www.instagram.com/suna.company/">
                 <figcaption class="hero-col-copy">
-                  <small>TWOONENINE story</small>
+                  <small>SUNA story</small>
                   <h3>INSTAGRAM</h3>
                   <p>Continue Watching</p>
                 </figcaption>
@@ -48,9 +48,9 @@
           <div class="hero__col hero__col-right"
             style=" background-image:url('https://wiodaily.com/images/collection/home_store.jpg'); background-size: cover; background-position: center;">
             <figure class="hero-col">
-              <a href="https://smartstore.naver.com/twoonenine/">
+              <a href="https://smartstore.naver.com/b219">
                 <figcaption class="hero-col-copy">
-                  <small>TWOONENINE shopping mall</small>
+                  <small>SUNA shopping mall</small>
                   <h3>STORE</h3>
                   <p>Continue Watching</p>
                 </figcaption>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </section>
-
+<!--
       <div class="container_column">
         <h1 style="margin: 1em 0 0 5vw; font-size:1.4em; color:black">BEST</h1>
 
@@ -173,6 +173,7 @@
       </div>
 
     </div>
+  -->
     <!--
     <AppAd />
   -->
