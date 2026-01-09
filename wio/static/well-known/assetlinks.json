@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.wiodaily.personality",
+                 "sha256_cert_fingerprints": ["2A:3B:BF:2F:CB:43:0C:16:04:B9:A5:E9:44:80:77:8F:28:E5:39:3A:F2:E7:B2:F8:21:7C:F0:93:D6:6A:7D:C4"] }
+  }]

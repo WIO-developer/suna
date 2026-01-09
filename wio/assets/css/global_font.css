@@ -1,0 +1,315 @@
+/*레코체*/
+@font-face {
+	font-family: 'recipe';
+	src: url(https://wiodaily.com/fonts/RECIPEKOREA-FONT.woff) format("woff");
+}
+
+/*여기어때체*/
+@font-face {
+	font-family: 'hotel';
+	src: url(https://wiodaily.com/fonts/JalnanOTF.woff) format("woff");
+}
+
+/*에스코어드림체*/
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream1-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream1-webfont.woff) format("woff");
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream2-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream2-webfont.woff) format("woff");
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream3-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream3-webfont.woff) format("woff");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream4-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream4-webfont.woff) format("woff");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'scdream5';
+	src: url(https://wiodaily.com/fonts/scdream5-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream5-webfont.woff) format("woff");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream6-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream6-webfont.woff) format("woff");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream7-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream7-webfont.woff) format("woff");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream8-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream8-webfont.woff) format("woff");
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'scdream';
+	src: url(https://wiodaily.com/fonts/scdream9-webfont.woff2) format("woff2"),
+		url(https://wiodaily.com/fonts/scdream9-webfont.woff) format("woff");
+	font-weight: 900;
+}
+.hotel_greyDark1_09 {
+	font-family: 'hotel';
+	font-size: 0.9em;
+	font-weight: normal;
+	color: var(--greyDark-1);
+	
+}
+.hotel_greyDark1_10 {
+	font-family: 'hotel';
+	font-size: 1.0em;
+	font-weight: normal;
+	color: var(--greyDark-1);
+	
+}
+.hotel_greyDark_10 {
+	font-family: 'hotel';
+	font-size: 1.0em;
+	font-weight: normal;
+	color: var(--greyDark);
+	
+}
+.hotel_greyDark_09 {
+	font-family: 'hotel';
+	font-size: 0.9em;
+	font-weight: normal;
+	color: var(--greyDark);
+	
+}
+.hotel_greyDark_08 {
+	font-family: 'hotel';
+	font-size: 0.8em;
+	font-weight: normal;
+	color: var(--greyDark);
+}
+.hotel_greyDark_07 {
+	font-family: 'hotel';
+	font-size: 0.7em;
+	font-weight: normal;
+	color: var(--greyDark);
+}
+.hotel_greyDark_11 {
+	font-family: 'hotel';
+	font-size: 1.1em;
+	font-weight: normal;
+	color: var(--greyDark);
+	
+}
+.hotel_greyDark1_11 {
+	font-family: 'hotel';
+	font-size: 1.1em;
+	font-weight: normal;
+	color: var(--greyDark-1);
+	
+}
+.hotel_greyDark1_12 {
+	font-family: 'hotel';
+	font-size: 1.2em;
+	font-weight: normal;
+	color: var(--greyDark-1);
+	
+}
+
+.hotel_persDark_11 {
+	font-family: 'hotel';
+	font-size: 1.1em;
+	font-weight: normal;
+	color: var(--persDark);
+	
+}
+.hotel_greyLight5_08 {
+	font-family: 'hotel';
+	font-size: 0.8em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.hotel_greyLight5_09 {
+	font-family: 'hotel';
+	font-size: 0.9em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.hotel_greyLight5_10 {
+	font-family: 'hotel';
+	font-size: 1.0em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_12 {
+	font-family: 'scdream';
+	font-size: 1.2em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_11 {
+	font-family: 'scdream';
+	font-size: 1.1em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_10 {
+	font-family: 'scdream';
+	font-size: 1em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_09 {
+	font-family: 'scdream';
+	font-size: 0.9em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_08 {
+	font-family: 'scdream';
+	font-size: 0.8em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_07 {
+	font-family: 'scdream';
+	font-size: 0.7em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_09_900 {
+	font-family: 'scdream';
+	font-size: 0.9em;
+	font-weight: 900;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyDark_09_900 {
+	font-family: 'scdream';
+	font-size: 0.9em;
+	font-weight: 900;
+	color: var(--greyDark);
+	
+}
+
+.scdream_greyLight5_08 {
+	font-family: 'scdream';
+	font-size: 0.8em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyLight5_07 {
+	font-family: 'scdream';
+	font-size: 0.7em;
+	font-weight: normal;
+	color: var(--greyLight-5);
+	
+}
+.scdream_greyDark1_10 {
+	font-family: 'scdream';
+	font-size: 1em;
+	font-weight: 600;
+	color: var(--greyDark-1);
+	
+}
+.scdream_greyDark1_11 {
+	font-family: 'scdream';
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--greyDark-1);
+}
+.scdream_greyDark1_12 {
+	font-family: 'scdream';
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--greyDark-1);
+}
+.scdream_greyDark_12 {
+	font-family: 'scdream';
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--greyDark);
+}
+.scdream_greyDark_11 {
+	font-family: 'scdream';
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--greyDark);
+}
+
+.scdream_greyDark_10 {
+	font-family: 'scdream';
+	font-size: 1.0em;
+	font-weight: 600;
+	color: var(--greyDark);
+}
+.scdream_greyDark1_09 {
+	font-family: 'scdream';
+	font-size: 0.9em;
+	color: var(--greyDark-1);
+	
+}
+.scdream_greyDark_09 {
+	font-family: 'scdream';
+	font-size: 0.9em;
+	color: var(--greyDark-1);
+	font-weight: 600;
+	
+}
+
+.scdream_greyDark_12 {
+	font-family: 'scdream';
+	font-size: 1.2em;
+	color: var(--greyDark-1);
+	font-weight: 600;
+	
+}
+.scdream_greyDark1_08 {
+	font-family: 'scdream';
+	font-size: 0.8em;
+	font-weight: 600;
+	color: var(--greyDark-1);
+}
+
+.scdream_greyDark1_07 {
+	font-family: 'scdream';
+	font-size: 0.7em;
+	font-weight: 600;
+	color: var(--greyDark-1);
+}
+
+.scdream_greyDark_07 {
+	font-family: 'scdream';
+	font-size: 0.7em;
+	font-weight: 600;
+	color: var(--greyDark-1);
+}

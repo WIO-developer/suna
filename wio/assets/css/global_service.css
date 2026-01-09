@@ -1,0 +1,8 @@
+.service_width {
+	font-family: 'scdream';
+	background: var(--greyLight-0);
+	margin: 0 auto;
+	max-width: 550px;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,53 @@
+.default_button
+{
+	padding: 0.6em 0;
+	font-weight: normal;
+	mily: 'hotel';
+	color: var(--greyDark-1);
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+.default_button p
+{
+	margin: auto 0;
+}
+
+.normal_button {
+	width: 84%;
+	margin: 6% auto;
+	box-shadow: 3px 3px 4px var(--greyLight-2),
+		-2px -2px 4px white,
+        1px 2px white;
+    background: var(--greyLight-0);	
+}
+
+.web_button {
+	width: 84%;
+	margin: 5% auto;
+	box-shadow: 3px 3px 4px var(--greyLight-2),
+		-2px -2px 4px white,
+        1px 2px white;
+    background: var(--greyLight-0);	
+}
+
+.app_button {
+	width: 84%;
+	margin: 5% auto;
+	box-shadow: 3px 3px 4px var(--greyLight-2),
+		-2px -2px 4px white,
+        1px 2px white;
+    background: var(--greyLight-0);	
+}
+
+.test_button {
+    color: var(--greyLight-0);
+    font-size: 1.0em;
+    background: var(--persGradient);
+    box-shadow: 3px 3px 4px var(--persDark),
+    -2px -2px 4px white,
+    1px 2px white;
+}

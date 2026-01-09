@@ -1,0 +1,110 @@
+.popup {
+	font-family: 'scdream';
+	margin: 75px auto;
+	background: #fff;
+	border: 1px solid#666;
+	width: 86%;
+	max-width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	position: relative;
+	padding: 20px 20px;
+	z-index: 11;
+}
+#home {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+
+#popup_menu {
+	font-family: 'scdream';
+	background: var(--greyLight-0);
+	width: 70%;
+    height: 100%;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	right: -100%;
+	opacity: 0;
+	transition: all 0.4s ease 0s;
+}
+#overlay_modal {
+    width: 100%;
+    height: 100%;
+	position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    opacity: 0;
+    background-color: black;
+	transition: all 0.4s ease 0s;
+}
+.modal_popup {
+	position: relative;
+	z-index: 11;
+}
+
+.modal_img {
+	width: 98%;
+	margin: 5vh auto 0 auto;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	max-width: 1000px;
+	max-height: 90vh;
+}
+
+#popup_share {
+	color: rgb(233, 233, 233);
+}
+
+#sharetextmain {
+	margin-top: 13%;
+}
+
+#sharetext {
+	font-size: 0.6em;
+	color: var(--nameloveblack);
+	font-weight: normal;
+}
+
+#url_share {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: #cbcbcb;
+	background-color: #f1f1f1;
+	border-style: solid;
+	padding: 3% 3%;
+	font-size: 0.7em;
+	margin: 20px 0 0 0;
+}
+
+#textlink {
+	width: 85%;
+	font-size: 0.9em;
+}
+
+#img_share {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	margin: 7% 0 15px 0;
+}
+
+#img_share img {
+	width: 49px;
+	height: 49px;
+	margin: 0 5px 0 0;
+}
+
+#url_share p {
+	font-family: 'scdream';
+	color: #666;
+}

@@ -1,0 +1,911 @@
+#namelove {
+	margin: 0 auto;
+	font-size: 16px;
+	font-family: 'hotel';
+
+}
+#namelove #sidetitle {
+	margin: 10px;
+	color: var(--namelovenavy);
+}
+
+/*전체 페이지 폼*/
+#namelove fieldset {
+
+	border: 0 none;
+	box-sizing: border-box;
+	/*stacking fieldsets above each other*/
+	position: relative;
+	margin: 0 auto;
+}
+
+
+
+#namelove #myname_f {
+	background-color: var(--greyLight-0);
+	min-height: 468px;
+	text-align: center;
+}
+#namelove #myname_s {
+	background-color: var(--greyLight-0);
+}
+#namelove #result_f {
+	background: var(--greyLight-0);
+	padding-bottom: 65px;
+}
+
+#namelove #result_f_iu {
+	background: var(--greyLight-0);
+	padding-bottom: 65px;
+}
+
+#namelove .first_shell {
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+}
+
+#namelove .first_sub_shell {
+	display: flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+}
+
+#namelove .result_button {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 10px;
+	margin: 4% 8% 4% 8%;
+	padding: 2%;
+	background-color: white;
+	font-size: 1.2em;
+	box-shadow: 7px 7px 15px 5px var(--greyLight-2),
+        -5px -5px 15px 5px white;
+}
+
+#namelove .result_button_full {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 10px;
+	margin: 4% 8% 4% 8%;
+	font-size: 1.2em;
+	box-shadow: 7px 7px 15px 5px var(--greyLight-2),
+        -5px -5px 15px 5px white;
+}
+
+#namelove .result_button_full_img {
+	width: 100%;	
+	border-radius: 10px;
+	
+}
+
+#namelove .result_button p{
+	color: var(--nameloveblack);
+}
+#namelove .result_title {
+	margin: 1% 8%;
+	font-size: 1.3em;
+	color: var(--greyDark-1);
+}
+
+#namelove .result_button:hover, #namelove .result_button_full:hover {
+	box-shadow: 6px 7px 7px 3px rgba(44, 23, 23, 0.4);
+    transition: all ease 0.3s 0s
+}
+
+#namelove .result_button:not(:hover), #namelove .result_button_full:not(:hover) {
+	transition: all ease 0.3s 0s
+}
+
+#namelove .result_shell_app {
+	height: 44%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 10px;
+	border-style: solid;
+	border: #fff;
+	background-color: white;
+	box-shadow: 5px 7px 10px 5px rgba(44, 23, 23, 0.4);
+	margin: 3% 3% 5% 3%;
+	padding: 2%;
+}
+
+#namelove #myname_f img {
+	width: 60%;
+	height: 80%;
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 15px 5px var(--greyLight-2),
+        -4px -4px 5px 5px white;
+}
+
+#namelove .first_img {
+	height: 50%;
+}
+
+
+
+#namelove .result_myname {
+	color: var(--greyLight-4);
+}
+
+#namelove .result_yourname {
+	color: var(--greyLight-4);
+}
+
+#namelove #result_score {
+	font-weight: 800;
+	color: var(--namelovered);
+}
+
+#namelove #input_group {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 5% auto 0 auto;
+}
+
+#namelove #myname_add_button, #namelove #yourname_add_button {
+	display: none;
+}
+
+
+#namelove #yourname_checkbox, #namelove #myname_checkbox, #namelove #yourname_checkbox img,  #namelove #myname_checkbox img, #namelove .add_button, #namelove .add_button img  {
+	height: 35px;
+	width: 35px;
+}
+#namelove #yourname_checkbox, #namelove #myname_checkbox {
+	box-shadow: 7px 7px 15px 5px var(--greyLight-2),
+        -5px -5px 15px 5px white;
+    background: var(--greyLight-0);
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#namelove .add_button {
+	box-shadow: 0 2px 25px var(--nameloveshadowgreen),
+	-5px -5px 15px 5px white;
+    background: var(--namelovegreen);
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+#namelove #myname_add_button:checked ~ #myname_checkbox, #namelove #yourname_add_button:checked ~ #yourname_checkbox{
+	box-shadow: 0 2px 25px var(--nameloveshadowgreen),
+	-5px -5px 15px 5px white;
+    background: var(--namelovegreen);
+}
+#namelove #myname_add_button:checked ~ #perslove_mypers, #namelove #yourname_add_button:checked ~ #perslove_yourpers{
+	color: var(--namelovegreen);
+	font-weight: bold;
+}
+
+#namelove .search_box {
+	width: 94%;
+	padding: 0 3%;
+	margin: 3% auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	border-radius: 10px;
+	box-shadow: 7px 7px 15px 5px var(--greyLight-2),
+        -5px -5px 15px 5px white;
+    background: var(--greyLight-0);	
+}
+
+#namelove .rank_text {
+	border: none;
+	background-color: transparent;
+	box-sizing: border-box;
+	color: var(--nameloveblack);
+	font-size: 0.8em;
+	margin-left: 0.5em;
+	font-weight: normal;
+	width: 80%;
+}
+
+#namelove .rank_text:focus {
+	outline: none;
+}
+
+
+#namelove .rank_x_group, #namelove .rank_button, #namelove .rank_column, #namelove .rank_x, #namelove .rank_text{
+	height: 30px;
+	cursor: pointer
+}
+#namelove .rank_button, #namelove .rank_x {
+	width: 30px;
+}
+
+#namelove .delete_img {
+	height: 21px;
+	width: 21px;
+	background: var(--namelovegray);
+	color: white;
+	border: 0 none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+#namelove .delete_button {
+	cursor: pointer;
+}
+
+#namelove .delete_shell {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: var(--namelovegray);
+	height: 21px;
+	line-height: 21px;
+	font-size: 1.0em;
+}
+
+#namelove .delete_right_shell {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+#namelove .delete {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#namelove .textbox {
+	
+	padding: 0 4%;
+	width: 75%;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 7px 7px 15px 5px white,
+		2px 2px 5px 1.5px var(--greyLight-2) inset,
+		-1px -1px 5px 1px white inset;
+    background: var(--greyLight-0);	
+	font-size: 1.0em;
+	height: 35px;
+	font-family: 'scdream';
+}
+
+#namelove .textbox:focus {
+	outline: none;
+    background: var(--greyLight-1);	
+}
+
+#namelove .choicebox {
+	padding: 0 4%;
+	width: 75%;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 7px 7px 15px 5px white,
+		2px 2px 5px 1.5px var(--greyLight-2) inset,
+		-1px -1px 5px 1px white inset;
+    background: var(--greyLight-0);	
+	color: grey;
+	font-size: 1.0em;
+	height: 35px;
+	display : flex;
+	align-items : center;
+	font-family: 'scdream';
+}
+
+#namelove .green-button {
+	width: 90%;
+	height: 40px;
+	background: var(--namelovegreen);
+	box-shadow: 0 2px 25px var(--nameloveshadowgreen);
+	font-weight: normal;
+	font-family: 'hotel';
+	color: white;
+	border: 0 none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 1.1em;
+	margin: 10% 0 0 0;
+}
+
+#namelove .red-button {
+	width: 90%;
+	height: 40px;
+	background: var(--namelovered);
+	box-shadow: 0 2px 25px var(--nameloveshadowred);
+	font-weight: normal;
+	font-family: 'hotel';
+	color: white;
+	border: 0 none;
+	border-radius: 3px;
+	font-size: 1.1em;
+	cursor: pointer;
+	margin: 10% 0 0 0;
+}
+
+
+#namelove #result_input_group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	margin: 0 5%;
+}
+
+#namelove .kakao_result_button {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+#namelove .green_result_button {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: var(--namelovegreen);
+	box-shadow: 0 2px 25px var(--nameloveshadowgreen);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+#namelove .red_result_button {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--namelovered);
+	box-shadow: 0 2px 25px var(--nameloveshadowred);
+
+}
+
+#namelove .result_button_group:active {
+	transform: translateY(-3px);
+	transition: all 0.2s ease 0s;
+	outline: none;
+}
+
+#namelove #reverse,
+#namelove #replay,
+#namelove #result_share,
+#namelove .green_result_button a{
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#namelove #result_title_group {
+
+	padding: 2% 0 2% 0;
+}
+
+#namelove .result_content_us
+{
+	text-align: center;
+	border-radius: 10px;
+	border-style: solid;
+	border: #fff;
+	box-shadow: 6px 6px 15px 5px var(--greyLight-2),
+        -3px -3px 5px 4px white;
+	padding: 2%;
+	width: 94%;
+	margin: 0 auto 3% auto;
+}
+
+#namelove .result {
+	font-family: 'scdream';
+	font-weight: 800;
+}
+
+#namelove #result1
+{
+}
+
+#namelove #result2
+{
+}
+
+#namelove #result3
+{
+}
+
+#namelove .rs-title {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: var(--nameloveblack);
+	font-weight: normal;
+	margin: 3% 0;
+}
+
+
+#namelove .title {
+	font-size: 1.3em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: var(--greyLight-5);
+}
+
+#namelove .content_title {
+	font-size: 1.1em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: var(--namelovegray);
+}
+
+#namelove .rs-titlescore {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: var(--nameloveblack);
+	margin: 0 0 1% 0;
+	font-weight: normal;
+}
+
+#namelove .rs-firstsubtitle {
+	font-family: 'scdream';
+	font-weight: bold;
+	font-size: 1.1em;
+	color: var(--namelovegray);
+	margin-top: 1%;
+}
+
+#namelove .subtitle {
+	font-family: 'hotel';
+	font-weight: normal;
+	font-size: 1.1em;
+	color: var(--namelovegray);
+	margin-top: 1%;
+}
+
+#namelove .content {
+	font-family: 'hotel';
+	font-weight: normal;
+	font-size: 1.1em;
+	color: var(--nameloveblack);
+	margin-top: 1%;
+}
+
+
+#namelove .rs-subtitle {
+	font-family: 'scdream';
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 3% 0 0 0;
+	color: var(--namelovegray);
+}
+
+#namelove .rs-content {
+	margin-top: 2%;
+	font-family: 'hotel';
+	font-weight: normal;
+	font-size: 1em;
+	color: var(--greyDark-1);
+}
+
+#namelove #result_tag_group {
+	margin-top: 2%;
+	font-weight: normal;
+}
+
+#namelove #hashtag {
+	font-size: 1.0em;
+	font-family: 'hotel';
+	font-weight: normal;
+	font-size: 1em;
+	color: var(--greyDark-1);
+}
+
+#namelove .notice {
+	color: var(--namelovegray);
+	font-family: 'scdream';
+	font-weight: bold;
+	font-size: 0.6em;
+	margin: 3% 5% 0 5%;
+}
+
+#namelove .hr {
+	margin: 5% 0;
+}
+
+/*색*/
+#namelove #green {
+	color: rgba(65, 146, 130, 1);
+
+}
+
+
+/*메인 세번째 페이지 박스*/
+#namelove #result_animation {
+	z-index: 2;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#namelove #result_animation_img {
+	width: 84%;
+	margin: 0 8%;
+	border-radius: 10px;
+	min-height: 255px;
+}
+
+/*전체 페이지 하단 박스*/
+
+#namelove .second_bottom_shell {
+	text-align: center;
+}
+
+#namelove .second_title {
+	margin: 0 5%;
+	padding: 5% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 35%;
+}
+
+#namelove .second_name {
+    
+	box-shadow: 7px 7px 15px 5px white,
+	2px 2px 5px 1.5px var(--greyLight-2) inset,
+	-1px -1px 5px 1px white inset;
+	margin: 2% 4% 2% 4%;
+	padding: 3% 3%;
+	border-radius: 10px;
+	border-color: #cbcbcb;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100px;
+	overflow: auto;
+}
+
+/*메인 페이지 제외 내부 텍스트*/
+#namelove #sidecontent #green {
+	font-size: 1.2em;
+	margin: 2% 0;
+}
+
+#namelove #sidecontent {
+	color: var(--namelovegray);
+	margin: 2%;
+	font-weight: normal;
+	font-weight: normal;
+}
+
+
+/*계산 방법 설명 이미지*/
+#namelove #way {
+	margin-top: 10px;
+	width: 80%;
+}
+
+
+
+/*메인 결과 페이지 프로그래스 바*/
+/*Copyright (c) 2022 by Eunjinha (https://codepen.io/Amyha/pen/eYdzOBV)*/
+#namelove .progress_form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5% 0 3% 0;
+
+}
+
+#namelove .progress {
+	background-color: #d8d8d8;
+	border-radius: 10px;
+	height: 30px;
+	width: 86%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+#namelove .progress-done {
+	background: linear-gradient(to right, rgb(255, 93, 112), #ffeeff);
+	box-shadow: 0 3px 3px -5px rgb(255, 93, 112), 0px 2px 5px rgba(255, 68, 90);
+	color: white;
+	text-shadow: -1px 0 rgba(239, 171, 179, 1), 0 1px rgba(239, 171, 179, 1), 1px 0 rgba(239, 171, 179, 1), 0 -1px rgba(239, 171, 179, 1);
+	font-weight: normal;
+	font-size: 1.3em;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	height: 100%;
+	width: 1%;
+	transition-duration: 1s;
+}
+
+
+
+
+
+
+@media (max-width: 359px) {
+	#namelove {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 550px) and(min-height:568px) {
+	#namelove {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 550px) {
+	#namelove {
+		font-size: 20px;
+	}
+
+
+	#namelove .result_button_group {
+		height: 70px;
+		width: 70px;
+	}
+
+	#namelove .result_input_shell {
+		min-height: 80px
+	}
+
+	#namelove #reverse,
+	#namelove #replay,
+	#namelove #result_share,
+	#namelove .green_result_button a{
+		min-height: 55px;
+		min-width: 55px;
+	}
+
+	#namelove .progress {
+		height: 45px;
+	}
+
+	#namelove .green-button,
+	#namelove .red-button {
+		height: 60px;
+	}
+
+	 #namelove .rank_text, #namelove .rank_button, #namelove .rank_x, #namelove .rank_column, #namelove .rank_x_group {
+		height: 45px;
+	}
+
+	#namelove .textbox, #namelove .choicebox, #namelove #myname_checkbox, #namelove #yourname_checkbox, #namelove #yourname_checkbox img,  #namelove #myname_checkbox img, #namelove .add_button, #namelove .add_button img  {
+		height: 50px;
+	}
+	#namelove #myname_checkbox, #namelove #yourname_checkbox, #namelove #yourname_checkbox img,  #namelove #myname_checkbox img, #namelove .add_button, #namelove .add_button img  {
+		width: 50px;
+	}
+	#namelove .delete_img {
+		height: 28px;
+		width: 28px;
+	}
+
+	#namelove .delete_shell {
+		height: 40px;
+		line-height: 40px;
+	}
+
+	#namelove .second_name {
+		height: 200px;
+	}
+
+	#namelove #myname_f {
+		min-height: 700px;
+	}
+
+	#namelove #myname_s {
+		min-height: 700px;
+	}
+
+	#namelove #myname_s_us {
+		min-height: 700px;
+	}
+
+	#namelove #result_f {
+		min-height: 700px;
+		padding-bottom: 85px;
+	}
+
+	#namelove #result_animation {
+		height: 370px;
+	}
+
+	#namelove .result_us_title {
+		height: 100px;
+		line-height: 100px;
+	}
+	#namelove #myname_f img {
+		margin-top: 70px;
+	}
+	
+}
+
+
+/*메인 결과 페이지 상단 박스 애니메이션*/
+/*Copyright (c) 2022 by Ian Wessen (https://codepen.io/ianwessen/pen/BoJmBr) / #result_animation_objectN fadeIn*/
+#namelove #result_animation_id0 {
+	animation: fadeIn0 8s;
+}
+
+#namelove #result_animation_id1 {
+	animation: fadeIn0 8s;
+}
+
+#namelove #result_animation_id2 {
+	animation: fadeIn1 8s;
+}
+
+#namelove #result_animation_id3 {
+	animation: fadeIn2 8s;
+}
+
+#namelove #result_animation_id4 {
+	animation: fadeIn3 8s;
+}
+
+#namelove #result_animation_id5 {
+	animation: fadeIn4 8s;
+}
+
+#namelove #result_animation_id6 {
+	animation: fadeIn5 8s;
+}
+
+#namelove #result_animation_id7 {
+	animation: fadeIn6 8s;
+}
+
+@keyframes fadeIn0 {
+	0% {
+		opacity: 0
+	}
+
+	7% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn1 {
+	0% {
+		opacity: 0
+	}
+
+	7% {
+		opacity: 0
+	}
+
+	14% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn2 {
+	0% {
+		opacity: 0
+	}
+
+	14% {
+		opacity: 0
+	}
+
+	21% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn3 {
+	0% {
+		opacity: 0
+	}
+
+	21% {
+		opacity: 0
+	}
+
+	28% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn4 {
+	0% {
+		opacity: 0
+	}
+
+	28% {
+		opacity: 0
+	}
+
+	35% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn5 {
+	0% {
+		opacity: 0
+	}
+
+	35% {
+		opacity: 0
+	}
+
+	42% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn6 {
+	0% {
+		opacity: 0
+	}
+
+	42% {
+		opacity: 0
+	}
+
+	49% {
+		color: #414141;
+		opacity: 1
+	}
+
+	60% {
+		opacity: 1
+	}
+
+	75% {
+		color: rgb(255, 54, 78);
+		opacity: 1
+	}
+
+	100% {
+
+		color: rgb(255, 54, 78);
+		opacity: 1
+	}
+}

@@ -1,0 +1,275 @@
+.type_radio {
+    display: none;
+}
+
+.type_button {
+    width: 130px;
+    height: 50px;
+    background: var(--greyLight-1);
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.type_radio:checked+.type_button {
+    background: var(--persloveLight);
+}
+
+.type_button img {
+    width: 130px;
+    height: 50px;
+}
+
+.type_button_shell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px 0;
+}
+
+.type_result_button {
+    width: 280px;
+    height: 50px;
+    background: var(--persloveLight);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "hotel";
+    color: white;
+    font-size: 1.4em;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#myname_add_button, #yourname_add_button {
+	display: none;
+}
+
+#myname_add_button:checked ~ #myname_checkbox,
+#yourname_add_button:checked ~ #yourname_checkbox{
+    background: var(--persloveLight);
+}
+
+#myname_add_button:checked ~ #perslove_mypers,
+#yourname_add_button:checked ~ #perslove_yourpers{
+	color: var(--greyLight-5);
+	font-weight: bold;
+}
+#yourname_checkbox,
+#myname_checkbox,
+#yourname_checkbox img,
+#myname_checkbox img,
+.add_button,
+.add_button img  {
+	height: 35px;
+	width: 35px;
+}
+#yourname_checkbox, #myname_checkbox {
+    background: var(--greyLight-1);
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.choicebox {
+	padding: 0 4%;
+	width: 75%;
+	border: none;
+	border-radius: 10px;
+	color: var(--greyLight-3);
+	font-size: 1.0em;
+	height: 35px;
+	display : flex;
+	align-items : center;
+	font-family: 'scdream';
+}
+/*Copyright (c) 2022 by Maria Marin (https://codepen.io/myacode/pen/OJyqaOw)*/
+
+#perslove .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: var(--greyLight-1);
+    padding: 5rem;
+    border: 1px solid white;
+}
+
+#perslove .card__percent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#perslove #card__number {
+    font-size: 1.4em;
+    font-family: 'scdream';
+    font-weight: 900;
+    position: absolute;
+    display: flex;
+	align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+
+#perslove .card__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	
+}
+
+#perslove .card__description h2 {
+    font-size: 1.8em;
+    letter-spacing: 1.2px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: var(--greyLight-5);
+	
+}
+
+#perslove .card__description h4 {
+    font-size: 1.1em;
+    font-weight: normal;
+    color: var(--greyLight-4);
+	
+}
+
+#perslove .card__description p {
+    font-size: 1.0em;
+    color: var(--greyLight-4);
+	
+}
+
+#perslove svg {
+    position: relative;
+    width: 288px;
+    height: 288px;
+    z-index: 8;
+    transform: rotate(-90deg);
+}
+
+#perslove svg #circle_max {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-linecap: round;
+    transform: translate(3rem, 3rem);
+    stroke-dasharray: 577.8;
+    /* 2 * PI * radius*/
+    stroke-dashoffset: -577.8;
+    transition: all 2.5s ease;
+    stroke-width: 37;
+    opacity: 1;
+}
+#perslove svg #circle_min {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-linecap: round;
+    transform: translate(3rem, 3rem);
+    stroke-dasharray: 565.2;
+    /* 2 * PI * radius*/
+    stroke-dashoffset: 565.2;
+    transition: all 1.5s ease;
+    stroke-width: 30;
+    opacity: 0;
+}
+
+#perslove .circle {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+
+}
+
+#perslove .circle__medium {
+    width: 224px;
+    height: 224px;
+}
+
+#perslove .circle__small {
+    width: 144px;
+    height: 144px;
+}
+#perslove .circle__smaller {
+    width: 128px;
+    height: 128px;
+}
+
+@media (max-width: 550px) {
+    #perslove svg circle {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke-linecap: round;
+        transform: translate(3rem, 3rem);
+        stroke-dasharray: 565.2;
+        /* 2 * PI * radius*/
+        stroke-dashoffset: 565.2;
+        transition: all 1.5s ease;
+        stroke-width: 30;
+    }
+
+    #perslove svg {
+        width: 224px;
+        height: 224px;
+    }
+
+    #perslove .circle {
+        width: 208px;
+        height: 208px;
+    }
+
+    #perslove .circle__medium {
+        width: 176px;
+        height: 176px;
+    }
+
+    #perslove .circle__small {
+        width: 112px;
+        height: 112px;
+    }
+    #perslove .circle__smaller {
+        width: 96px;
+        height: 96px;
+    }
+
+    #perslove svg #circle_max {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke-linecap: round;
+        transform: translate(48px, 48px);
+        stroke-dasharray: 904.32;
+        /* 2 * PI * radius*/
+        stroke-dashoffset: -904.32;
+        transition: all 2.5s ease;
+        stroke-width: 30;
+        opacity: 0;
+    }
+    #perslove svg #circle_min {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke-linecap: round;
+        transform: translate(48px, 48px);
+        stroke-dasharray: 452.2;
+        /* 2 * PI * radius*/
+        stroke-dashoffset: -452.2;
+        transition: all 2.5s ease;
+        stroke-width: 29;
+        opacity: 1;
+    }
+}

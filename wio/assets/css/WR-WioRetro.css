@@ -1,0 +1,114 @@
+#wioretro {
+    background: var(--greyLight-0);
+    max-width: 550px;
+    font-size:15px;
+}
+
+#wioretro .wioretro_adform{
+    width: 94%;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 15px;
+}
+#wioretro .header{
+    height: 60px;
+    background-color: var(--namelovebg);
+    color: black;
+    font-size: 1.5em;
+    font-family: 'hotel';
+    line-height:60px;
+}
+
+#wioretro .contents{
+    margin: 0 auto 5% auto;
+    display: flex;
+	flex-direction:row;
+    justify-content:space-between;
+    border-radius: 10px;
+	box-shadow: 6px 6px 15px 5px var(--greyLight-2),
+        -4px -4px 5px 5px white;
+    background: var(--greyLight-0);
+}
+
+#wioretro .contents:hover {
+	box-shadow: 2px 5px 14px 1px rgba(44, 23, 23, 0.4);
+    transition: all ease 0.3s 0s
+}
+
+#wioretro .contents:not(:hover) {
+	transition: all ease 0.3s 0s
+}
+
+#wioretro .text_contents{
+    width: 62%;
+    padding-top: 2%;
+}
+
+#wioretro .root_popular{
+    margin-top: 60px;
+    font-family: 'hotel';
+    font-weight: normal;
+    padding: 3% 3%;
+}
+
+#wioretro .root_newitem{
+    font-family: 'hotel';
+    font-weight: normal;
+    padding: 3% 3%;
+}
+
+#wioretro .root_title{
+    font-size: 1.2em;
+    margin-bottom: 2%;
+
+}
+#wioretro .green_contents_title{
+    font-family: 'scdream';
+    font-size:1.0em;
+    color: var(--namelovegreen);
+}
+#wioretro .black_contents_title{
+    font-family: 'scdream';
+    font-size:1.0em;
+    font-weight: 700;
+    color: black;
+}
+#wioretro .red_contents_title{
+    font-family: 'hotel';
+    font-size:1.0em;
+    color: var(--namelovered);
+}
+#wioretro .contents_subtitle{
+    font-family: 'scdream';
+    font-size:0.9em;
+    font-weight: 700;
+    color: var(--namelovegray);
+}
+#wioretro .contents img {
+    border-radius: 10px;
+    width: 35%;
+    height: 90px;
+}
+@media (max-width: 550px){
+	#wioretro {
+		font-size: 15px;
+	}
+	
+}
+
+@media (min-width: 550px){
+    #wioretro {
+		font-size: 20px;
+	}
+	#wioretro .wioretro_adform, #wioretro .contents img {
+        height: 130px;
+	}
+    #wioretro .header{
+        height: 80px;
+        line-height:80px;
+    }
+    #wioretro .root_popular{
+        margin-top: 80px;
+    }
+    
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.wiodaily.namelove",
+            "sha256_cert_fingerprints": [
+                "7C:A1:BB:BD:0F:23:77:18:F5:13:1F:51:9C:16:B7:AD:37:C0:10:78:98:99:EB:17:F6:88:78:0D:CD:6A:0F:98"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.wiodaily.perslove",
+            "sha256_cert_fingerprints": [
+                "7C:A1:BB:BD:0F:23:77:18:F5:13:1F:51:9C:16:B7:AD:37:C0:10:78:98:99:EB:17:F6:88:78:0D:CD:6A:0F:98"
+            ]
+        }
+    }
+]

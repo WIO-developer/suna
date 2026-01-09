@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: */result
+Disallow: /privacy
+
+#DaumWebMasterTool:4815bcf8d8902a3abe7c1dab2b5950852cccd0aa7410f73ae2372a0d946fba7d:lLdPV7Wk7aIF8G6h1y/NGw==

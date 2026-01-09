@@ -1,0 +1,27 @@
+/*Footer*/
+ .site_footer {
+	background-color: var(--greyLight-1);
+	padding: 2% 4% 2% 4%;
+	max-width: 550px;
+	font-size: 0.9em;
+	line-height: 20px;
+	color:var(--greyLight-5);
+	margin: 0px auto 0 auto;
+	text-align: center;
+    display: fixed;
+    bottom: 0;
+}
+.site_footer a:hover {
+	color:#3366cc;
+	text-decoration: none;
+}
+
+.side_footer {
+	
+	padding: 2% 4% 2% 4%;
+	line-height: 15px;
+	color:var(--greyLight-5);
+	text-align: center;
+    position:absolute;
+    bottom: 0;
+}

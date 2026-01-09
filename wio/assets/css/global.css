@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html {
+	font-family: 'scdream';
+	background: var(--greyLight-0);
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+input, textarea, button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+:root {
+	--storage: "https://wiodaily.com";
+}
+#privacy {
+	padding: 1em;
+}
+
+.padding_2 {
+	padding: 2% 2%;
+}
+.padding_02 {
+	padding: 0 2%;
+}
+.padding_20 {
+	padding: 2% 0;
+}
+.padding_30 {
+	padding: 3% 0;
+}
+.padding_03 {
+	padding: 0 3%;
+}
+.margin_40 {
+    margin: 4% auto;
+}
+.margin_30 {
+    margin: 3% auto;
+}
+.margin_02 {
+    margin: auto 2%;
+}
+.margin_20 {
+    margin: 2% auto;
+}
+.width_84 {
+	width: 84%;
+}
+
+img {
+	-webkit-tap-highlight-color: transparent;
+}
+div {
+	-webkit-tap-highlight-color: transparent;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	
+}
+p {
+	-webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 550px) {
+	html {
+		font-size: 18px;
+	}
+ }
+ @media (max-width: 320px) {
+	html {
+		font-size: 14px;
+	}
+ }
