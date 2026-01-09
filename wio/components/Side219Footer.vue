@@ -5,7 +5,7 @@
     </p>
     <div style="margin:0.5em 0 1em 0">
       <img style="height: 0.9em;" :src="storage_url + `/collection/219/logo.png`">
-      <a href="https://wiodaily.com/home/">
+      <a href="https://suna.company/home/">
         <img style="height: 0.9em;" :src="storage_url + `/collection/219/wiocollection.png`">
       </a>
     </div>

@@ -1,76 +1,76 @@
 /*레코체*/
 @font-face {
 	font-family: 'recipe';
-	src: url(https://wiodaily.com/fonts/RECIPEKOREA-FONT.woff) format("woff");
+	src: url(https://suna.company/fonts/RECIPEKOREA-FONT.woff) format("woff");
 }
 
 /*여기어때체*/
 @font-face {
 	font-family: 'hotel';
-	src: url(https://wiodaily.com/fonts/JalnanOTF.woff) format("woff");
+	src: url(https://suna.company/fonts/JalnanOTF.woff) format("woff");
 }
 
 /*에스코어드림체*/
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream1-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream1-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream1-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream1-webfont.woff) format("woff");
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream2-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream2-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream2-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream2-webfont.woff) format("woff");
 	font-weight: 200;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream3-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream3-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream3-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream3-webfont.woff) format("woff");
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream4-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream4-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream4-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream4-webfont.woff) format("woff");
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'scdream5';
-	src: url(https://wiodaily.com/fonts/scdream5-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream5-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream5-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream5-webfont.woff) format("woff");
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream6-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream6-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream6-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream6-webfont.woff) format("woff");
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream7-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream7-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream7-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream7-webfont.woff) format("woff");
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream8-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream8-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream8-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream8-webfont.woff) format("woff");
 	font-weight: 800;
 }
 
 @font-face {
 	font-family: 'scdream';
-	src: url(https://wiodaily.com/fonts/scdream9-webfont.woff2) format("woff2"),
-		url(https://wiodaily.com/fonts/scdream9-webfont.woff) format("woff");
+	src: url(https://suna.company/fonts/scdream9-webfont.woff2) format("woff2"),
+		url(https://suna.company/fonts/scdream9-webfont.woff) format("woff");
 	font-weight: 900;
 }
 .hotel_greyDark1_09 {

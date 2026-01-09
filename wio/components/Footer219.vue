@@ -5,7 +5,7 @@
       <span class="scdream_greyLight5_08">|</span>
       <a class="scdream_greyLight5_09" href="https://www.instagram.com/wio.daily/">인스타그램</a>
       <span class="scdream_greyLight5_08">|</span>
-      <a class="scdream_greyLight5_09" href="https://blog.wiodaily.com/">블로그</a>
+      <a class="scdream_greyLight5_09" href="https://blog.suna.company/">블로그</a>
       -->
     </div>
     <p style="margin-top: 0.5em; color:white" class="scdream_greyLight5_08">
@@ -54,7 +54,7 @@ export default {
   },
   created() {
     this.contact = 'wio_baebae@naver.com'
-    this.url = 'https://wiodaily.com'
+    this.url = 'https://suna.company'
     this.urlNm = 'WIO 기술 블로그'
     if (this.type === 'wiopers') {
       this.aboutTxt = `WIO퍼스널리티(위오퍼스널리티)는 사용자 여러분께 시각적이고 역동적인 성격유형 컨텐츠로

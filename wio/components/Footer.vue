@@ -6,7 +6,7 @@
       <span class="scdream_greyLight5_08">|</span>
       <a class="scdream_greyLight5_09" href="https://www.instagram.com/wio.daily/">인스타그램</a>
       <span class="scdream_greyLight5_08">|</span>
-      <a class="scdream_greyLight5_09" href="https://blog.wiodaily.com/">블로그</a>
+      <a class="scdream_greyLight5_09" href="https://blog.suna.company/">블로그</a>
       -->
     </div>
     <p style="margin-top: 0.5em;" class="scdream_greyLight5_08">

@@ -33,7 +33,7 @@
 
         <div class="hero__cols">
           <div class="hero__col"
-            style="background-image:url('https://wiodaily.com/images/collection/home_instagram.jpg'); background-size: cover; background-position: center;">
+            style="background-image:url('https://suna.company/images/collection/home_instagram.jpg'); background-size: cover; background-position: center;">
             <figure class="hero-col">
               <a href="https://www.instagram.com/suna.company/">
                 <figcaption class="hero-col-copy">
@@ -46,7 +46,7 @@
           </div>
 
           <div class="hero__col hero__col-right"
-            style=" background-image:url('https://wiodaily.com/images/collection/home_store.jpg'); background-size: cover; background-position: center;">
+            style=" background-image:url('https://suna.company/images/collection/home_store.jpg'); background-size: cover; background-position: center;">
             <figure class="hero-col">
               <a href="https://smartstore.naver.com/b219">
                 <figcaption class="hero-col-copy">
