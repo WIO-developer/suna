@@ -9,7 +9,7 @@
         <div style="position: relative; height: 8em; margin-bottom: 0.1em;">
             <div class="normal_shell"
                 style="position: absolute; top: 0; left: 0; right: 0; z-index: 9; border-radius: 10px; background: white; border: solid rgb(109, 109, 109) 2px; margin: 0 auto 0.8em auto; padding: 1em">
-                <p class="scdream_greyDark_12">테스트</p>
+                <p class="scdream_greyDark_12">SUNA</p>
                 <!--인기 접힌상태-->
                 <div v-show="showLinks">
                     <MainHomeLink v-for="(menu, index) in menuranklist" :key="menu.key"
@@ -42,11 +42,17 @@
         </div>
 
         <div class="white_shell flex_row_between_shell" style="margin-bottom: 4em;">
-            <nuxt-link style="width:18%;" :to="`/collection/219/`">
-                <img style="width:100%;" :src="storage_url + `/collection/collection_icon.png`" />
-                <p class="scdream_greyDark_07" style="text-align: center;">콜렉션</p>
-            </nuxt-link>
+            <a
+  style="width:18%;"
+  href="https://smartstore.naver.com/b219"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img style="width:100%;" :src="storage_url + `/collection/초록배경.png`" />
+  <p class="scdream_greyDark_07" style="text-align: center;">네이버</p>
+</a>
 
+<!--
             <nuxt-link style="width:18%;" :to="`/village/`">
                 <img style="width:100%;" :src="storage_url + `/village/village_icon.png`" />
                 <p class="scdream_greyDark_07" style="text-align: center;">빌리지</p>
@@ -60,7 +66,7 @@
             <nuxt-link style="width:18%;" :to="`/retro/`">
                 <img style="width:100%;" :src="storage_url + `/retro/retro_icon.png`" />
                 <p class="scdream_greyDark_07" style="text-align: center;">레트로</p>
-            </nuxt-link>
+            </nuxt-link>-->
         </div>
 
         <!--광고-->
@@ -75,7 +81,7 @@
         </AppVifReverse>
 
 
-        <!--신규-->
+        <!--신규--><!--
         <div class="white_shell">
             <p class="scdream_greyDark_12">신규</p>
             <div style="margin: 1em auto;">
@@ -84,8 +90,8 @@
                     :service_logo="menu.menuListOption.service_logo" />
             </div>
         </div>
-
-        <!--콜렉션-->
+    -->
+        <!--콜렉션--><!--
         <div style="margin-top:1em; background-image: URL(https://wiodaily.com/images/collection/219/219_home_2.jpg); background-size : cover; background-position: center;"
             class="wide_shell">
             <div class="normal_shell">
@@ -105,8 +111,8 @@
                 </nuxt-link>
             </div>
         </div>
-
-        <!--빌리지-->
+    -->
+        <!--빌리지--><!--
         <div style="margin-top:1em;height: auto; background-image: URL(https://wiodaily.com/images/village/wio_home.png); background-size : cover; background-position: center;"
             class="wide_shell">
             <div class="normal_shell">
@@ -126,9 +132,9 @@
                 </nuxt-link>
             </div>
         </div>
+    -->
 
-
-        <!--퍼스널리티-->
+        <!--퍼스널리티--><!--
         <div style="margin-top:1em" class="wide_shell">
             <div class="normal_shell">
                 <div class="flex_row_between_shell" style="align-items: center;">
@@ -150,8 +156,8 @@
                 </nuxt-link>
             </div>
         </div>
-
-        <!--레트로-->
+    -->
+        <!--레트로--><!--
         <div style="margin-top:1em" class="wide_shell">
             <div class="normal_shell">
                 <div class="flex_row_between_shell" style="align-items: center;">
@@ -169,8 +175,8 @@
                 </div>
             </div>
         </div>
-
-        <!--전체서비스-->
+    -->
+        <!--전체서비스--><!--
         <div style="margin-top:1em" class="white_shell">
             <p class="scdream_greyDark_12">전체서비스</p>
             <div style="margin: 1em auto;">
@@ -225,8 +231,9 @@
                 
             </div>
         </div>
-
+    -->
         <!--블로그-->
+        <!--
         <div class="white_shell" style="margin-top:1em">
             <a href="https://blog.wiodaily.com" class="flex_row_between_shell" style="align-items: center; margin:1em auto">
 
@@ -235,9 +242,9 @@
 
             </a>
         </div>
-
+    
         <Footer />
-
+        -->
         <!--
         <AppCacheDelete />
         <AppVif>
