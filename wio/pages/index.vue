@@ -32,34 +32,36 @@
                         </figure>
                     </div>
                 </div>
+                <a href="https://smartstore.naver.com/b219">
+                    <div class="hero__col hero__col-right"
+                        style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
+                        <figure class="hero-col">
 
-                <div class="hero__col hero__col-right"
-                    style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
-                    <figure class="hero-col">
-                        <a href="https://smartstore.naver.com/b219">
                             <figcaption class="hero-col-copy">
                                 <small>SUNA shopping mall</small>
                                 <h3>STORE</h3>
                                 <p>Continue Watching</p>
                             </figcaption>
-                        </a>
-                    </figure>
-                </div>
 
+                        </figure>
+                    </div>
+                </a>
 
                 <div class="hero__cols">
-                    <div class="hero__col"
-                        style="background-image:url('/image/home_insta.jpg'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
-                            <a href="https://www.instagram.com/suna.company/">
+                    <a href="https://www.instagram.com/suna.company/">
+                        <div class="hero__col"
+                            style="background-image:url('/image/home_insta.jpg'); background-size: cover; background-position: center;">
+                            <figure class="hero-col">
+
                                 <figcaption class="hero-col-copy">
                                     <small>SUNA story</small>
                                     <h3>INSTAGRAM</h3>
                                     <p>Continue Watching</p>
                                 </figcaption>
-                            </a>
-                        </figure>
-                    </div>
+
+                            </figure>
+                        </div>
+                    </a>
 
 
                 </div>
