@@ -280,22 +280,22 @@ export default [
   },
   {
     fileNm: 'twoonenine',
-    title: '투원나인 | TWOONENINE',
+    title: '수나 | SUNA',
     meta: [
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '투원나인 | TWOONENINE'
+        content: '수나 | SUNA'
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'And say, "Man, what are you doin` here?" - 219'
+        content: '일상을 함께, 매일입을 수 있는 옷을 선사합니다. 트레이닝복 전문 스토어 | 수나'
       },
       {
         hid: 'description',
         name: 'description',
-        content: 'And say, "Man, what are you doin` here?" - 219'
+        content: '일상을 함께, 매일입을 수 있는 옷을 선사합니다. 트레이닝복 전문 스토어 | 수나'
       },
       {
         hid: 'og:image',
