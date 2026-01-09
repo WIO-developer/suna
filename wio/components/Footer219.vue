@@ -9,11 +9,11 @@
       -->
     </div>
     <p style="margin-top: 0.5em; color:white" class="scdream_greyLight5_08">
-      <span style="font-weight: bold;">COMPANY INFO</span> 
+      <span style="font-weight: bold;">COMPANY INFO</span>
     </p>
-      <p style="margin-top: 0.5em; color:white" class="scdream_greyLight5_08">
-        | COMPANY WIO | LICENSE 614-02-67518 |</p>
-    
+    <p style="margin-top: 0.5em; color:white" class="scdream_greyLight5_08">
+      | COMPANY WIO | LICENSE 614-02-67518 |</p>
+
     <p style="margin-top: 0.3em; color:white" class="scdream_greyLight5_08">
       | E-MAIL wio_baebae@naver.com |
     </p>
@@ -24,11 +24,11 @@
       Copyright &copy; 2023.11 All Rights Reserved by
     </p>
     <div style="margin-top: 0.3em;">
-      <img style="height:1em; line-height: 1em;" :src="storage_url + `/collection/219/logo.png`">
       <a href="https://suna.company">
-        <img style="height:1em; line-height: 1em;" :src="storage_url + `/collection/219/wiocollection.png`">
+        <img style="height:1em; line-height: 1em;" src="/image/white_suna.png">
       </a>
     </div>
+
   </footer>
 </template>
 
