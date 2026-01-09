@@ -3,7 +3,9 @@
 
 
         <div class="container_column">
+            <!--
             <Header219 />
+            -->
             <!--
         <div class="pc_row">
           <img class="pc_66" :src="storage_url + `/collection/219/1_1.jpg`">
@@ -31,9 +33,23 @@
                     </div>
                 </div>
 
+                <div class="hero__col hero__col-right"
+                    style="background-image:url('/image/home_store.jpg'); background-size: cover; background-position: center;">
+                    <figure class="hero-col">
+                        <a href="https://smartstore.naver.com/b219">
+                            <figcaption class="hero-col-copy">
+                                <small>SUNA shopping mall</small>
+                                <h3>STORE</h3>
+                                <p>Continue Watching</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+
                 <div class="hero__cols">
                     <div class="hero__col"
-                        style="background-image:url('https://wiodaily.com/images/collection/home_instagram.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/home_insta.jpg'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
                             <a href="https://www.instagram.com/suna.company/">
                                 <figcaption class="hero-col-copy">
@@ -45,18 +61,7 @@
                         </figure>
                     </div>
 
-                    <div class="hero__col hero__col-right"
-                        style=" background-image:url('https://wiodaily.com/images/collection/home_store.jpg'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
-                            <a href="https://smartstore.naver.com/b219">
-                                <figcaption class="hero-col-copy">
-                                    <small>SUNA shopping mall</small>
-                                    <h3>STORE</h3>
-                                    <p>Continue Watching</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-                    </div>
+
                 </div>
             </section>
             <!--
@@ -173,12 +178,13 @@
         </div>
   
       </div>
-    -->
+        -->
             <!--
       <AppAd />
-    -->
+        -->
             <Footer219 style="max-width: none; background:black" />
         </div>
+    </div>
 </template>
 <script>
 import menuConfig from '@/config/webConfig'
@@ -581,7 +587,8 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
 
 .hero__col {
     background-color: #a7a7a7;
-    margin-top: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     position: relative;
     width: 100%;
     display: block;
