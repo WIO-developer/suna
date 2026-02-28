@@ -714,7 +714,7 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
 }
 
 .logo-bar--store{
-  grid-template-columns: repeat(4, 1fr); /* 모바일 4등분 유지 */
+  grid-template-columns: repeat(3, 1fr); /* 모바일 4등분 유지 */
 }
 
 .logo-bar--sns{
