@@ -19,8 +19,8 @@
 
                 <section class="card-sm__container">
                     <!--- START: CARD --->
-                    <a href="https://suna.company/collection/219/" class="card-sm"
-                        style="background-image:url('https://suna.company/images/collection/219/219_home_2.jpg')">
+                    <a href="https://store.suna.company/collection/219/" class="card-sm"
+                        style="background-image:url('https://store.suna.company/images/collection/219/219_home_2.jpg')">
                         <h1 style="text-align:right; font-size:1.0em" class="card__text-lg">Fashion</h1>
                         <div>
                             <p class="card__text-sm">Shopping에서 Luxury까지</p>
@@ -30,8 +30,8 @@
                     <!--- END: CARD --->
 
                     <!--- START: CARD --->
-                    <a href="https://suna.company/village/" class="card-sm"
-                        style="background-image: url('https://suna.company/images/village/wio_home.png'); background-position: center right;">
+                    <a href="https://store.suna.company/village/" class="card-sm"
+                        style="background-image: url('https://store.suna.company/images/village/wio_home.png'); background-position: center right;">
                         <h1 style="text-align:right; font-size:1.0em" class="card__text-lg">Character</h1>
                         <div>
                             <p class="card__text-sm">사랑이 넘치는 캐릭터 마을</p>
@@ -41,8 +41,8 @@
                     <!--- END: CARD --->
 
                     <!--- START: CARD --->
-                    <a href="https://suna.company/" class="card-sm"
-                        style="background-image: url('https://suna.company/images/wio/app.png')">
+                    <a href="https://store.suna.company/" class="card-sm"
+                        style="background-image: url('https://store.suna.company/images/wio/app.png')">
                         <h1 style="text-align:right; font-size:1.0em" class="card__text-lg">Service</h1>
                         <div>
                             <p class="card__text-sm">다양한 IT서비스</p>
@@ -156,7 +156,7 @@ body {
 }
 
 .main {
-    background: url('https://suna.company/images/wio/background.png') no-repeat center;
+    background: url('https://store.suna.company/images/wio/background.png') no-repeat center;
     background-size: cover;
     box-shadow:
         inset 0 0 100vw 100vw rgba(0, 0, 0, 0.4);

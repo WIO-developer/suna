@@ -24,7 +24,7 @@
       Copyright &copy; 2023.11 All Rights Reserved by
     </p>
     <div style="margin-top: 0.3em;">
-      <a href="https://suna.company">
+      <a href="https://store.suna.company">
         <img style="height:1em; line-height: 1em;" src="/image/white_suna.png">
       </a>
     </div>
@@ -54,7 +54,7 @@ export default {
   },
   created() {
     this.contact = 'wio_baebae@naver.com'
-    this.url = 'https://suna.company'
+    this.url = 'https://store.suna.company'
     this.urlNm = 'WIO 기술 블로그'
     if (this.type === 'wiopers') {
       this.aboutTxt = `WIO퍼스널리티(위오퍼스널리티)는 사용자 여러분께 시각적이고 역동적인 성격유형 컨텐츠로

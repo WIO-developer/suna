@@ -21,7 +21,7 @@ input, textarea, button {
     -moz-border-radius: 0;
 }
 :root {
-	--storage: "https://suna.company";
+	--storage: "https://store.suna.company";
 }
 #privacy {
 	padding: 1em;

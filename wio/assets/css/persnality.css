@@ -363,31 +363,31 @@ html .persdes_background {
 
 .bingo_default {
     color:var(--greyLight-1);
-    content: url(https://suna.company/images/icon/check_button/greyLight-3_check_button.png);
+    content: url(https://store.suna.company/images/icon/check_button/greyLight-3_check_button.png);
     z-Index :2;
     opacity : 0.3;
 }
 .bingo_purple {
     color:var(--greyLight-3);
-    content: url(https://suna.company/images/icon/check_button/purpleLight-0_check_button.png);
+    content: url(https://store.suna.company/images/icon/check_button/purpleLight-0_check_button.png);
     z-Index :4;
     opacity : 0.4;
 }
 .bingo_green {
     color:var(--greyLight-3);
-    content: url(https://suna.company/images/icon/check_button/greenLight-0_check_button.png);
+    content: url(https://store.suna.company/images/icon/check_button/greenLight-0_check_button.png);
     z-Index :4;
     opacity : 0.4;
 }
 .bingo_blue {
     color:var(--greyLight-3);
-    content: url(https://suna.company/images/icon/check_button/blueLight-0_check_button.png);
+    content: url(https://store.suna.company/images/icon/check_button/blueLight-0_check_button.png);
     z-Index :4;
     opacity : 0.4;
 }
 .bingo_yellow {
     color:var(--greyLight-3);
-    content: url(https://suna.company/images/icon/check_button/yellowLight-0_check_button.png);
+    content: url(https://store.suna.company/images/icon/check_button/yellowLight-0_check_button.png);
     z-Index :4;
     opacity : 0.4;
 }
