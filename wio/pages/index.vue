@@ -33,56 +33,70 @@
                     </div>
                 </div>
 
-<!-- STORE -->
-<div class="logo-bar logo-bar--store">
-
-  <a class="logo-slot" href="https://smartstore.naver.com/b219">
-    <div class="logo-box">
-      <img src="/image/naver.png" class="logo-img"/>
-    </div>
-  </a>
-
-  <a class="logo-slot" href="https://applink.a-bly.com/데일리수나">
-    <div class="logo-box">
-      <img src="/image/ably.png" class="logo-img"/>
-    </div>
-  </a>
-
-  <a class="logo-slot" href="https://s.zigzag.kr/abr/zYqOFI2kUB">
-    <div class="logo-box">
-      <img src="/image/zigzag.png" class="logo-img"/>
-    </div>
-  </a>
-
-  <a class="logo-slot" href="https://suna.company">
-    <div class="logo-box">
-      <img src="/image/초록배경.png" class="logo-img"/>
-    </div>
-  </a>
-
+<!-- OFFICIAL -->
+<div class="logo-section">
+  <div class="logo-title">OFFICIAL</div>
+  <div class="logo-bar logo-bar--single">
+    <a class="logo-slot" href="https://suna.company">
+      <div class="logo-box">
+        <img src="/image/초록배경.png" class="logo-img"/>
+      </div>
+    </a>
+  </div>
 </div>
 
+
+<!-- PLATFORM -->
+<div class="logo-section">
+  <div class="logo-title">PLATFORM</div>
+  <div class="logo-bar logo-bar--store">
+
+    <a class="logo-slot" href="https://smartstore.naver.com/b219">
+      <div class="logo-box">
+        <img src="/image/naver.png" class="logo-img"/>
+      </div>
+    </a>
+
+    <a class="logo-slot" href="https://applink.a-bly.com/데일리수나">
+      <div class="logo-box">
+        <img src="/image/ably.png" class="logo-img"/>
+      </div>
+    </a>
+
+    <a class="logo-slot" href="https://s.zigzag.kr/abr/zYqOFI2kUB">
+      <div class="logo-box">
+        <img src="/image/zigzag.png" class="logo-img"/>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
 <!-- SNS -->
-<div class="logo-bar logo-bar--sns">
+<div class="logo-section">
+  <div class="logo-title">SNS</div>
+  <div class="logo-bar logo-bar--sns">
 
-  <a class="logo-slot" href="https://www.instagram.com/suna.company/">
-    <div class="logo-box">
-      <img src="/image/instagram.png" class="logo-img"/>
-    </div>
-  </a>
+    <a class="logo-slot" href="https://www.instagram.com/suna.company/">
+      <div class="logo-box">
+        <img src="/image/instagram.png" class="logo-img"/>
+      </div>
+    </a>
 
-  <a class="logo-slot" href="https://www.tiktok.com/@suna_company">
-    <div class="logo-box">
-      <img src="/image/tiktok.png" class="logo-img"/>
-    </div>
-  </a>
+    <a class="logo-slot" href="https://www.tiktok.com/@suna_company">
+      <div class="logo-box">
+        <img src="/image/tiktok.png" class="logo-img"/>
+      </div>
+    </a>
 
-  <a class="logo-slot" href="https://www.youtube.com/@suna.company">
-    <div class="logo-box">
-      <img src="/image/youtube.png" class="logo-img"/>
-    </div>
-  </a>
+    <a class="logo-slot" href="https://www.youtube.com/@suna.company">
+      <div class="logo-box">
+        <img src="/image/youtube.png" class="logo-img"/>
+      </div>
+    </a>
 
+  </div>
 </div>
             </section>
             <!--
@@ -712,6 +726,24 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+.logo-section{
+  width:100%;
+  margin-top:18px;
+}
+
+.logo-title{
+  text-align:center;
+  font-size:12px;
+  letter-spacing:0.18em;
+  margin-bottom:10px;
+  opacity:0.6;
+}
+
+.logo-bar--single{
+  grid-template-columns: repeat(1, 1fr);
+  justify-items:center;
 }
 
 /* 🔥 핵심: 둥근 화이트 정사각형 */
