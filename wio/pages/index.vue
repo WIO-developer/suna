@@ -33,56 +33,38 @@
                     </div>
                 </div>
 
-                <div class="hero__card-row">
-
-  <a href="https://smartstore.naver.com/b219">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/naver.png" class="logo-img"/>
-    </div>
+                <!-- ✅ STORE row -->
+<div class="logo-bar logo-bar--store">
+  <a class="logo-slot" href="https://smartstore.naver.com/b219" target="_blank" rel="noopener">
+    <img src="/image/naver.png" class="logo-img" alt="SUNA NAVER STORE" />
   </a>
 
-  <a href="https://applink.a-bly.com/데일리수나">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/ably.png" class="logo-img"/>
-    </div>
+  <a class="logo-slot" href="https://applink.a-bly.com/데일리수나" target="_blank" rel="noopener">
+    <img src="/image/ably.png" class="logo-img" alt="SUNA ABLY STORE" />
   </a>
 
-  <a href="https://s.zigzag.kr/abr/zYqOFI2kUB">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/zigzag.png" class="logo-img"/>
-    </div>
+  <a class="logo-slot" href="https://s.zigzag.kr/abr/zYqOFI2kUB" target="_blank" rel="noopener">
+    <img src="/image/zigzag.png" class="logo-img" alt="SUNA ZIGZAG STORE" />
   </a>
 
-  <a href="https://suna.company">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/초록배경.png" class="logo-img"/>
-    </div>
+  <a class="logo-slot" href="https://suna.company" target="_blank" rel="noopener">
+    <img src="/image/초록배경.png" class="logo-img" alt="SUNA OFFICIAL STORE" />
   </a>
-
 </div>
 
-
-<!-- SNS -->
-<div class="hero__card-row">
-
-  <a href="https://www.instagram.com/suna.company/">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/instagram.png" class="logo-img"/>
-    </div>
+<!-- ✅ SNS row -->
+<div class="logo-bar logo-bar--sns">
+  <a class="logo-slot" href="https://www.instagram.com/suna.company/" target="_blank" rel="noopener">
+    <img src="/image/instagram.png" class="logo-img" alt="SUNA INSTAGRAM" />
   </a>
 
-  <a href="https://www.tiktok.com/@suna_company">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/tiktok.png" class="logo-img"/>
-    </div>
+  <a class="logo-slot" href="https://www.tiktok.com/@suna_company" target="_blank" rel="noopener">
+    <img src="/image/tiktok.png" class="logo-img" alt="SUNA TIKTOK" />
   </a>
 
-  <a href="https://www.youtube.com/@suna.company">
-    <div class="hero__col hero__col-logo">
-      <img src="/image/youtube.png" class="logo-img"/>
-    </div>
+  <a class="logo-slot" href="https://www.youtube.com/@suna.company" target="_blank" rel="noopener">
+    <img src="/image/youtube.png" class="logo-img" alt="SUNA YOUTUBE" />
   </a>
-
 </div>
             </section>
             <!--
@@ -690,37 +672,83 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
     top: 0px;
     left: 0px;
 }
-.hero__card-row {
-  display:flex;
-  gap:12px;
-  padding:20px 5vw;
-  flex-wrap:nowrap; /* 한 줄 유지 */
+
+/* 공통: 한 줄 로고 바 */
+.logo-bar{
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 0;                 /* 모바일 4등분 딱 맞추기 */
+  padding: 10px 0;
 }
 
-/* 기존 hero__col 재활용 */
-.hero__col-logo {
-  flex:1;
-  height:64px;
-  background:white;
-  border-radius:12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px solid rgba(0,0,0,0.08);
+/* 모바일: 화면을 정확히 N등분 */
+.logo-bar--store{
+  grid-template-columns: repeat(4, 1fr);   /* ✅ 4등분 고정 */
+}
+.logo-bar--sns{
+  grid-template-columns: repeat(3, 1fr);   /* ✅ 3등분 고정 */
 }
 
-/* 로고 */
-.logo-img {
-  max-height:60%;
-  max-width:70%;
-  object-fit:contain;
+/* 슬롯(클릭 영역) */
+.logo-slot{
+  width: 100%;
+  height: 56px;            /* 모바일 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  /* 너무 답답하면 아래 border 주석 해제해서 테스트 */
+  /* border: 1px solid rgba(0,0,0,0.06); */
 }
 
-/* 모바일 */
-@media (max-width:480px){
-  .hero__col-logo{
-    height:48px;
+/* 로고 이미지: 픽셀 깨짐 방지(과도 확대 금지) */
+.logo-img{
+  width: auto;
+  height: auto;
+  max-height: 26px;        /* ✅ 모바일 로고 최대 높이 */
+  max-width: 80%;          /* 슬롯 안에서 여백 유지 */
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* PC: 가운데 정렬 + 적당한 최대 크기 */
+@media (min-width: 768px){
+  .logo-bar{
+    padding: 14px 0;
+    justify-content: center;
   }
+
+  /* PC에서는 바 자체를 가운데로 모으고 싶으니 max-width로 제한 */
+  .logo-bar--store{
+    max-width: 720px;              /* 4칸 모아놓는 폭 */
+    margin: 0 auto;
+    column-gap: 18px;              /* PC에서는 살짝 띄움 */
+  }
+  .logo-bar--sns{
+    max-width: 540px;              /* 3칸 모아놓는 폭 */
+    margin: 0 auto;
+    column-gap: 18px;
+  }
+
+  .logo-slot{
+    height: 64px;                  /* PC 높이 살짝 키움 */
+  }
+
+  .logo-img{
+    max-height: 32px;              /* ✅ PC 로고 최대 높이 */
+    max-width: 90%;
+  }
+}
+
+/* 더 큰 PC */
+@media (min-width: 1200px){
+  .logo-bar--store{ max-width: 820px; }
+  .logo-bar--sns{ max-width: 620px; }
+  .logo-img{ max-height: 36px; }
 }
 
 @media (min-width: 900px) {
