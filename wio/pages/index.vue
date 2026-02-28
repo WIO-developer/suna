@@ -35,7 +35,7 @@
 
                 <a href="https://smartstore.naver.com/b219">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/naver.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
@@ -49,7 +49,7 @@
                 </a>
                                 <a href="https://applink.a-bly.com/데일리수나">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/ably.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
@@ -63,7 +63,7 @@
                 </a>
                                 <a href="https://s.zigzag.kr/abr/zYqOFI2kUB">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/zigzag.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
@@ -75,9 +75,9 @@
                         </figure>
                     </div>
                 </a>
-                                <a href="https://suna.comapny">
+                                <a href="https://suna.company">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_mall.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/초록배경.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
@@ -92,7 +92,7 @@
 
                 <a href="https://www.instagram.com/suna.company/">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_insta1.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/instagram.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
@@ -106,7 +106,7 @@
                 </a>
                 <a href="https://www.tiktok.com/@suna_company">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_insta1.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/tiktok.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
@@ -120,7 +120,7 @@
                 </a>
                 <a href="https://www.youtube.com/@suna.company">
                     <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/home_insta1.jpg'); background-size: cover; background-position: center;">
+                        style="background-image:url('/image/youtube.png'); background-size: cover; background-position: center;">
                         <figure class="hero-col">
 
                             <figcaption class="hero-col-copy">
