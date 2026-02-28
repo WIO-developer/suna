@@ -33,105 +33,57 @@
                     </div>
                 </div>
 
-                <a href="https://smartstore.naver.com/b219">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/naver.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
+                <div class="hero__card-row">
 
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA NAVER OFFICIAL</small>
-                                <h3>STORE</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
+  <a href="https://smartstore.naver.com/b219">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/naver.png" class="logo-img"/>
+    </div>
+  </a>
 
-                        </figure>
-                    </div>
-                </a>
-                                <a href="https://applink.a-bly.com/데일리수나">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/ably.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
+  <a href="https://applink.a-bly.com/데일리수나">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/ably.png" class="logo-img"/>
+    </div>
+  </a>
 
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA ABLY OFFICIAL</small>
-                                <h3>STORE</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
+  <a href="https://s.zigzag.kr/abr/zYqOFI2kUB">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/zigzag.png" class="logo-img"/>
+    </div>
+  </a>
 
-                        </figure>
-                    </div>
-                </a>
-                                <a href="https://s.zigzag.kr/abr/zYqOFI2kUB">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/zigzag.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
+  <a href="https://suna.company">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/초록배경.png" class="logo-img"/>
+    </div>
+  </a>
 
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA ZIGZAG OFFICIAL</small>
-                                <h3>STORE</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
+</div>
 
-                        </figure>
-                    </div>
-                </a>
-                                <a href="https://suna.company">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/초록배경.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
 
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA OFFICIAL</small>
-                                <h3>STORE</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
+<!-- SNS -->
+<div class="hero__card-row">
 
-                        </figure>
-                    </div>
-                </a>
+  <a href="https://www.instagram.com/suna.company/">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/instagram.png" class="logo-img"/>
+    </div>
+  </a>
 
-                <a href="https://www.instagram.com/suna.company/">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/instagram.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
+  <a href="https://www.tiktok.com/@suna_company">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/tiktok.png" class="logo-img"/>
+    </div>
+  </a>
 
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA story</small>
-                                <h3>INSTAGRAM</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
+  <a href="https://www.youtube.com/@suna.company">
+    <div class="hero__col hero__col-logo">
+      <img src="/image/youtube.png" class="logo-img"/>
+    </div>
+  </a>
 
-                        </figure>
-                    </div>
-                </a>
-                <a href="https://www.tiktok.com/@suna_company">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/tiktok.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
-
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA story</small>
-                                <h3>TIKTOK</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
-
-                        </figure>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/@suna.company">
-                    <div class="hero__col hero__col-right"
-                        style="background-image:url('/image/youtube.png'); background-size: cover; background-position: center;">
-                        <figure class="hero-col">
-
-                            <figcaption class="hero-col-copy">
-                                <small>SUNA story</small>
-                                <h3>YOUTUBE</h3>
-                                <p>Continue Watching</p>
-                            </figcaption>
-
-                        </figure>
-                    </div>
-                </a>
+</div>
             </section>
             <!--
         <div class="container_column">
@@ -737,6 +689,38 @@ input#new-0:checked~.nav-dots label#new-dot-0 {
     object-fit: cover;
     top: 0px;
     left: 0px;
+}
+.hero__card-row {
+  display:flex;
+  gap:12px;
+  padding:20px 5vw;
+  flex-wrap:nowrap; /* 한 줄 유지 */
+}
+
+/* 기존 hero__col 재활용 */
+.hero__col-logo {
+  flex:1;
+  height:64px;
+  background:white;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+/* 로고 */
+.logo-img {
+  max-height:60%;
+  max-width:70%;
+  object-fit:contain;
+}
+
+/* 모바일 */
+@media (max-width:480px){
+  .hero__col-logo{
+    height:48px;
+  }
 }
 
 @media (min-width: 900px) {
